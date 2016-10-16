@@ -1,0 +1,96 @@
+#mainpagesourse{ width:1130px;
+                            padding-left:10px; padding-right:10px;  
+                            height:auto; margin:0 auto;   }
+            #attechfotter{ width:100%; height:22px; position:fixed; bottom:0px;    }
+           .td_style_top_heder{ border-left:1px solid silver; height:27px; font-weight:100; 
+                              background-color:white;  text-align:center; border-bottom:1px solid silver;     }
+           .td_styling{ border-left:1px solid silver; height:22px; font-weight:100; 
+                              text-align:center; border-bottom:1px solid silver;     }
+ 
+  .notification{ width:400px; height:100px; background-color:whitesmoke; float:left; margin-top: 10px;  }
+  .top_first_heading{ width:97%; height:20px; padding-left:3%; float:left;border:1px solid dodgerblue;  
+                    padding-top:5px; color:white;   background-color:red;   }
+  .main_work_data{ width:100%; height:250px; background-color:white; float: left;border-left:1px solid dodgerblue; 
+  border-right:1px solid dodgerblue;   }
+  .fotter_last_div{ width:100%; height:24px; background-color:dodgerblue; float:left; border:1px solid dodgerblue;   }
+  
+  
+  #first_dashboard_div{ width:100%; height:74px; float:left; margin-top:10px;     }
+  .small_first_dashboard_div{ width:214px; height:70px; border:1px solid green;  margin-left:10px; 
+ border-radius:2px;  float:left; cursor:pointer;    }
+  .first_dashboard_table{ width:100%; height:auto; float:left;   }
+  .image_div{ width:80px; height:70px; background-color:green; float: right;  }
+  .first_dashboard_no{ width:100%; height:auto; font-weight:bold; padding-top:5px;  
+                     color:green;  font-size:23px; text-align:center;   }
+  .first_dashboard_title{ width:100%; height:22px; font-weight:bold;  color:silver;
+                         font-size:15px; text-align:center; margin-top:-3px;  }
+  #color_ing_2{  border:1px solid #24748c; }
+  #color_ing_2 .image_div{ background-color: #24748c;}
+  #color_ing_2 .first_dashboard_no{ color: #24748c;}
+  
+  #color_ing_3{  border:1px solid deeppink; }
+  #color_ing_3 .image_div{ background-color: deeppink;}
+  #color_ing_3 .first_dashboard_no{ color: deeppink;}
+  
+  #color_ing_4{  border:1px solid #49afcd; }
+  #color_ing_4 .image_div{ background-color: #49afcd;}
+  #color_ing_4 .first_dashboard_no{ color:#49afcd;}
+  
+  
+  #color_ing_5{  border:1px solid  purple; }
+  #color_ing_5 .image_div{ background-color: purple;}
+  #color_ing_5 .first_dashboard_no{ color: purple;}
+  
+  .first_dashboard_image{  height:64px; width:64px; margin-left:8px; margin-top:3px;     }
+  
+  
+  
+  
+  
+  #second_dashboard_div{ width:100%; height:auto; float:left; margin-top:15px;   }
+  #admin_details{ width:360px; height:280px; color:darkorchid;   border:1px solid darkorchid;  
+border-top:0px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; float:left;    }
+  #top_heading_second_dashboard{ width:100%; height:35px; float:left; border-bottom:1px solid darkorchid;  }
+  .admin_detail_tittle{ width:190px; height:28px; padding-top:7px; text-align:center;
+                      font-size:15px; font-weight:bold; background-color: white;    border-top:1px solid  darkorchid;
+color:black; border-right:1px solid darkorchid; float:left;  border-top-right-radius:4px;   }
+  .right_hide_boder{ width:5px; height:35px; float:right; background-color: white; margin-right:-3px;   }
+  .admin_profile_pic{ width:105px; height:105px; background-color:blue; float:right; margin-top:7px; 
+                      margin-right:10px;      }
+  .user_admin_table{ width:100%; height:auto; float:left;  margin-top:5px;   }
+    .user_admin_table td { padding-left:10px; }
+    .last_login_message{ width:100%; height:auto; padding-top:7px; text-align:center; font-weight:bold; color:red;
+    padding-bottom:7px; }
+    .button_show{ width:auto; padding-left:15px; padding-right:15px; background-color:green; float:left;
+     height:20px; padding-top:7px; color:white; margin-right:5px; float:right;   cursor:pointer;   }
+    
+    
+    #notification_show_div{ width:450px; height:280px;  border:1px solid cadetblue;  
+border-top:0px; border-bottom-left-radius:4px; border-bottom-right-radius:4px;  float:left; margin-left:15px;    }
+    
+    #third_account_details{  width:274px; height:280px;  border:1px solid cadetblue;  
+border-top:0px; border-bottom-left-radius:4px; border-bottom-right-radius:4px;  float:left; margin-left:15px; }
+    
+    #third_dashboard_div{ width:100%; height:auto; float:left;   }
+    .text_box { width:110px; height:16px;font-size:11px;  border:1px solid silver;  padding-left:5px; padding-right: 5px;   }
+    .date_table { width:auto; height:  auto; float:left; margin-left:18px; margin-top:2px;    }
+    .notification_work_div{ width:100%; height:210px;  float:left;    }
+    .horizental_line{ width:96%; height: 1px;background-color: #d6e9c6; margin-left:2%; float:left;   }
+    .search_button_style{ width:24px; height:21px; background-color:deeppink; border-radius:2px;
+                        background-image:url('../../images/arrow-27.png');  background-repeat:no-repeat;
+                       background-position-x:4px; background-position-y:2px;  border:0px; cursor:pointer;     }
+    .clear_button{ width:auto; padding-left:6px; color:blue; font-size:11px; cursor:pointer;     }
+    .remainder_ul{ width:432px; float:left; margin-left:9px; margin-top:3px;    height:200px;
+                  list-style:none; padding:0;      }
+    .list_stylse{ width:100%; height:19px; padding-top:5px;  
+               float:left;  border-bottom:1px solid silver;    }
+    .list_stylse:hover{ background-color:whitesmoke; cursor:pointer;  }
+    .left_side_title{ width:auto; float:left;  padding-left:20px;  color:blue; font-weight:bold;  }
+    .right_side_number{ width:auto; float:right; margin-right: 10px;  font-size:13px; color: red;
+                       font-weight:bold;   }
+    .income_expense_table{ width:96%; height:200px; margin-top:10px;  font-size:13px;  margin-left:2%;  margin-right:2%;   }
+    .date_range{ width:100%; height:auto; color:gray; font-weight:bold;  
+                font-size:11px;  text-align:center;  }
+    .view_full_details{ width:auto; height:20px; background-color:deepskyblue; float:right;
+padding-top:5px; padding-left:10px; padding-right: 10px; border-radius:3px;  margin-top:15px; color: white;     }
+    .image_show_admin{ width:95px; height:95px; margin-left:5px; margin-top:5px; border-radius:100%;    }

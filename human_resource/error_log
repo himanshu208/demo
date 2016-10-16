@@ -1,0 +1,2 @@
+[11-Apr-2016 12:55:50 UTC] PHP Notice:  Undefined variable: connection_permission in /home/differen/public_html/jdconventschool.in/admin/human_resource/hr_dashboard.php on line 5
+[12-Apr-2016 11:04:56 Asia/Calcutta] PHP Strict Standards:  mktime(): You should be using the time() function instead in /home/differen/public_html/jdconventschool.in/admin/human_resource/edit_employee_detail.php on line 790

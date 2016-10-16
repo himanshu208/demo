@@ -1,0 +1,238 @@
+#financefirstdiv{ width:100%;height:100%;  margin:0; padding:0;  
+                              font-family:arial;  font-size:12px; float:left;      }
+    .add_button_reset_button{ width:60px; height:22px; position: relative  }
+    #valuediv{ width:100%; height:auto; margin: 0 auto;    }
+    #table_midle_set{ width:700px; height:auto; float:left; padding-bottom:10px; 
+                      margin-top:10px; border:1px solid silver;     
+    }
+     #table_midle_setdetail{ width:440px; height:auto;  float:left; margin-left:2px;   margin-top:10px; 
+                            
+    }
+    .td_leftpaddingth{ padding-left:10px;}
+    #top_add_view_div{ width:100px; height:18px;
+                       background-image:url('finanacephoto/skynormal.png');
+                       float:right; margin-right:5px; color:black; text-align:center; padding-top:2px        }
+    .td_leftpadding{ padding-right:10px;text-align:right;  }
+    .textsize_same{ border:1px solid gray; margin-left:5px; }
+    .findandresetbutton{ width:60px; height:23px; margin-left:12px; font-size:12px; float: left;
+                             border:1px solid gray;color:whitesmoke; font-weight:bold;  
+                             background-image:url('finanacephoto/bgblack.png');  }
+    #error-msg{ width:100%; height:22px;padding-top:3px; background-color:#FFFFCC; 
+                margin-top:10px; float:left; color:#380000; text-align: center;
+                background-image:url('finanacephoto/skyblue.pg'); border:1px solid silver;     }
+    .td_colering{ width:auto;  height:20px; text-align:center; 
+                  background-color:whitesmoke; font-weight:bold; z-index:101; 
+                  border-bottom:1px solid silver; border-right:1px solid silver;
+    }
+    #td_colering{ border-left:1px solid silver;   }
+    .selectbox{ width:200px; border:1px solid silver; height:24px; border-radius:2px;   }
+    .selectbox_advance{ width:130px; border:1px solid silver;  }
+    .studentselectbox{ width:255px; font-size:12px;  color:black; height:20px;    border:1px solid silver;   }
+    #student_search{ width:405px; border:1px solid silver; height:20px; padding-left:3px;   }
+    .listbutton{ width:100%; height:100%; text-align:left;background-color:whitesmoke; 
+                    border:1px solid whitesmoke;  font-size:12px;  font-weight:400;  }
+        .listbutton:hover{ background-color:silver;  border:1px solid silver; font-weight:700;  cursor:pointer;  }
+     
+             p{ margin:0; padding:0; width:auto; float:left;    }
+.list li:hover{ background-color: dodgerblue; cursor:pointer; color:white;  }             
+ .list span{color:gray; }            
+       .sli{ width:100%;  height:auto; font-size:0px;   }
+        .hsli{ width:100%; height:auto; height:22px; text-indent:5px;  }
+        
+        .selectfeegroup{ width:270px; height:25px; border:1px solid silver;   }
+        .td_fetch_previous_details{ border-right:1px solid silver; z-index:100; 
+                                   font-size: 12px; border-bottom:1px solid silver; text-align:center;    }
+    #studentperiviousdetails{ width:100%; height:auto;   overflow:auto;   }
+    .bg_color{ background-color:white; height:22px;border-bottom:1px solid silver;    }
+    .feesprintslip{ width:auto; height:auto; color:blue; text-decoration: underline; cursor:pointer;    }
+    #refereshbutton{ width:85px; height:27px; float:right; margin-right:15px; font-weight:bold;  
+                     text-align:right; cursor:pointer;  
+                     background-image:url('finanacephoto/refresh.png');
+                     background-color:white;   background-position-y:1px; background-position-x:1px;  
+                     background-repeat:no-repeat;   }
+    #refereshbuttonadvance{width:85px; height:27px; float:right; margin-right:15px; font-weight:bold;  
+                     text-align:right; cursor:pointer;  
+                     background-image:url('finanacephoto/refresh.png');
+                     background-color:white;   background-position-y:1px; background-position-x:1px;  
+                     background-repeat:no-repeat; display: none;}
+    #fullviewwindowoutput{width:850px;  height:550px;border:2px solid steelblue;  
+               position:fixed;  right:0px; left:0px; top:20px; bottom:0px; display:none;
+                              z-index:202; background-color:whitesmoke; margin:0 auto; overflow:  no-display;  }
+        #closebutton{ width:100%; height:30px; background-color:steelblue; float:right; border-bottom:1px solid black;   }
+        #closebuttonthis{ width:33px; height:25px; margin-top:6px;  
+                          float:right;  
+                          }
+        #viewoutput{width:100%; height:94%;float:left; 
+                    background-color:whitesmoke;  overflow:hidden;  }
+         #fullviewwindow{ width:28px;  height:28px; margin-top:2px; 
+                          float:right;
+                         background-image:url('finanacephoto/closewindow/max.png'); background-repeat:no-repeat;     }
+        #printslip{ color: blue; cursor:pointer; text-decoration:underline;  }
+        #ajax_loader_show{ display:none; }
+        .th_styling{ background-color: gray; height:20px; border-left:1px solid black; border-bottom:1px solid black;
+                    text-align:center; color:white; font-size:11px; font-weight:bold;      }
+        .fee_td_styling{ border-bottom:1px solid black; border-left:1px solid black; text-align:center;
+                         font-size:11px; 
+       height:20px; }
+        .fee_table_class{ width:100%; float:left;  }
+        #all_student_list li b { color:black; }
+        
+        
+        .main{
+	border : 0px solid #8789E7;
+
+	padding: 10px 0px;
+	width : 800px;
+	height : 40px;
+}
+#loading{
+	visibility:hidden;
+	padding-left:5px;
+}
+#ajax_response{
+	border : 1px solid #8789E7;
+	background : #FFFFFF;
+	position:absolute;
+	display:none;
+	padding:2px 2px;
+	top:auto;
+}
+#holder{
+	width : 350px;
+}
+
+
+ul{ font-weight:100; padding:0px 0px;
+	margin:0px;
+	list-style : none;  }
+#all_list{ display: none;}
+#all_list li{ padding-top:8px; color:dodgerblue;  padding-bottom:4px; font-size:12px; 
+              border-left:1px solid silver;
+    border-right:1px solid silver; cursor:pointer;  }
+#all_list li a{ font-weight:100; cursor:pointer; }
+p{ margin:0; padding:0;  }
+#all_list b{ float:left; margin-left:5px; color:black;   }
+#all_list span{ float:left; margin-left:5px; margin-top:2px;  }
+#studentsearchby{ width:220px; height:24px;   }
+.selected{
+font-weight:100;   
+    background-color: lavender;
+}
+.bold{
+	font-weight:bold;
+	color: #131E9F;
+}
+.about{
+	text-align:right;
+	font-size:10px;
+	margin : 10px 4px;
+}
+.about a{
+	color:#BCBCBC;
+	text-decoration : none;
+}
+.about a:hover{
+	color:#575757;
+	cursor : default;
+}
+   .select_stylings{ width:165px; height:22px;  }   
+   
+   
+                                                                  #automcomplete_first_div{ width:410px; height:auto; position:absolute;
+ margin-left:6px;border-top:0px;
+z-index:301;}    
+                                                                  #ajax_auto_complete_div{ width:100%; height:auto;   }
+#all_list{  max-height:613px; overflow-y:auto; margin-top:0px;
+padding-right:5px; padding-bottom:2px;  }
+#all_list li{ padding-left:7px; border-radius:2px;    }    
+
+  #selectbankname{ height:22px; }
+            #ui-datepicker-div{ font-size:12px; }
+         .text_box_size_same{ width:150px; height:18px; border:1px solid silver; padding-left:5px;  text-align:right; padding-right:10px;    } 
+         .select_box{ width:155px; border:1px solid silver; height:24px; padding-top:2px; padding-bottom:2px; padding-right:2px;    }
+        .addpayamount_reset_button{width:auto; padding-left:20px; padding-right:20px; float:right;    height:23px; margin-right:12px; margin-top:5px; margin-bottom:5px;   font-size:12px; float:right;   
+                             border:1px solid gray;color:whitesmoke; font-weight:bold;  
+                             height:40px; cursor:pointer; background-color:blue;   }
+        .addcenclefine{width:auto; padding-left:20px; padding-right:20px; float:right;    height:23px; margin-right:22px; margin-top:5px; margin-bottom:5px;   font-size:12px; float:right;   
+                             border:1px solid gray;color:whitesmoke; font-weight:bold;  
+                             background-image:url('../finanacephoto/bgblack.png');}
+        .td_table_head{ width:auto; text-align:center; font-weight:bold; height:25px; font-size:11px; 
+                       background-color:whitesmoke;     border-bottom:1px solid silver; 
+                       border-left:1px solid silver; font-size:11px;    }
+        .td_print_value{ width:auto; text-align:center; height:22px; background-color:white;     border-bottom:1px solid silver; border-left:1px solid silver; font-size:12px;   }
+       p{ float:left; padding-left:2px; color:maroon; height:20px;  margin:0; padding:0;        }
+       .showfinedetails{width:500px; height:auto; border:1px solid maroon;  background-color: yellow; position:absolute; 
+                        left:105px; right:0px;   display:none;      }
+       .showduefinedetails{width:655px; height:auto; border:1px solid maroon; 
+                           position:absolute; background-color: white;
+                        left:20px; right:0px;   display:none;     }
+       .td_stylings{ width:auto; height:24px;  border-right:1px solid silver;  }
+       .td_fine_show_table{ width:auto; height:17px; background-color:whitesmoke; font-weight:bold; border-bottom:1px solid silver; border-right:1px solid silver;   }
+       .fineheader{ background-color:maroon; text-align:left; height:18px;  padding-left:15px; font-weight:bold; color:white;     }
+        .td_fetchfine{  border-bottom:1px solid silver;  border-right:1px solid silver; }
+       
+        
+        .td_fine_show_tabletotal{ background-color:maroon; text-align:center; height:18px; 
+                                 padding-left:0px; font-weight:bold; color:white;     }
+        .showdepositfeefinedetails{ width:500px; height: auto; display:none; 
+                                   position:absolute; margin-top:0; margin-left:60px;  border:1px solid maroon; }
+       #discountfine{width:400px; height:300px;overflow:hidden;   
+     text-align:center;padding:10px 0 10px 0;z-index:102; display:none;margin:10px;     }
+#closebuttonthis{ width:33px; height:32px; background-image:url('../finanacephoto/cenclebutton.png'); 
+                 background-repeat:no-repeat; margin-right:10px;   float:right;  margin-right:6px;    }
+#closebuttonthis:hover{ cursor: pointer;}
+#codethis{ width:360px; height:220px; float:left; background-color:white; border:5px solid white;     }
+#inputdate{ width:30px; height:30px; margin-top:3px; margin-left:3px; cursor:pointer;background-image:url('../finanacephoto/calender.png'); background-repeat:no-repeat;   }
+#outputcalender{ width:202px; height:228px; display:none; margin-top:-228px;   margin-left:0px;  position:absolute;    }       
+#addfine{ width:45px; height:18px; margin:0 auto; cursor:pointer; padding-left:8px; 
+           background-position-x:2px;  background-position-y:3px;    
+          background-color:skyblue; padding-top:2px; 
+          background-image:url('../finanacephoto/plus.gif'); background-repeat:no-repeat;  } 
+
+.feesfullydetails{ width:660px; display:none;  height:30px; background-color:red;
+                  position:absolute; margin:2px; margin-left:10px;  margin-top:-0px;      }
+#yellocolor{ background-color:yellow; }
+#fee_payment_div{ width:100%; height:auto; float:left;   }
+#manually_fee_month{ width:100%; height:auto; font-family:arial;   }
+.check_box_style{ width:15px; height:15px; margin-left:5px;   }
+.table_position{ width:auto; height:auto;padding:5px;  }
+        .show_specify_month{  width:100%; height:auto; font-family:arial;  font-family:arial; font-size:12px;   background-color: honeydew;
+                     border:1px solid gray; border-radius: 3px; float:left; margin-bottom:4px;   }
+        .show_month{ width:auto; height:auto; float:left; font-size:10px; padding-left:2px; padding-right:2px;      }
+        #final_payable_amount{ width:auto; height:auto; padding-right:3px; padding-left:3px;     float:right; text-align:center;  }
+        #currency{ width:auto; float:right;  }
+     .full_witdh_div{ width:100%; height:100%; background-color:gray; position:fixed;
+     opacity:0.6; z-index:99;  display:none; left:0; top:0;  float:left;  }
+     .show_alert_fee_payment{ width:auto; height:auto; position:fixed; left:0; top:0;
+                             z-index:101;  }
+     .white_div_tag_show{ width: 500px; height:200px;background-color:white;   margin:auto; margin-top:5%;   }
+     .text_area_box{ width:252px; height:42px;  border:1px solid silver;  font-family:arial;  }
+     
+     
+     .show_discount_full_width{ width:100%; height:100%; position:fixed; 
+                              z-index:101; left:0; top:0;   float:left;  display:none;  }
+     .first_small_div_tag{ width:500px; height:450px; background-color:white; 
+                         box-shadow:0px 0px 15px 0px black; border-radius:5px;
+                        border:4px solid gray;  position:absolute;  top:0; left:0; bottom: 0; right:0; margin:auto;    }
+     .close_button_div{ width:40px; height:40px;  float:right; margin:10px; border-radius:3px;  cursor:pointer;  
+     background-image:url('../../images/close_button.png'); background-repeat:no-repeat;  float:right; 
+     position:absolute; margin-left:448px;  border:1px solid whitesmoke; 
+     background-position-x:4px;  background-position-y:4px;   }
+     .table_record_data{ width:100%; height:auto;float:right; position:relative;     }
+     .data_tables{ width:85%; height:auto; margin-left:10px; margin-top:10px; float:left;
+     font-family:arial; font-size:12px;  }
+     .data_tables td{ padding-top:2px; }
+     .horizental_line{ width:100%; height:1px; background-color:silver;   }
+     .text_box_styling{ width:250px; height:23px; border:1px solid silver; padding-left:5px;    }
+     .add_fine_button{ width:70px; height:30px; background-color: dodgerblue; margin-right: 10px;
+                       cursor:pointer; 
+     border:0px;  border-radius:2px; color:white; float:right;  font-weight: bold;  }
+     .cancel_button{ width:90px; height:30px; background-color:red;cursor:pointer; 
+     border:0px;  border-radius:2px; color:white; float:right; font-weight: bold; margin-right:15px; }
+     .select_discount_type{ width:257px; height:30px;  border:1px solid silver; }
+     .notification_div_tag{ width:80%; height:auto;  
+     float:left; padding-left:10%; padding-right:10%; margin-top:40px;  text-align:center;
+     font-size:15px; font-weight:bold;  font-family:arial;    }
+     .ok_button_save{ width:90px; height:25px; background-color:dodgerblue;
+     text-align:center; padding-top:10px; float:right; margin-right:15px;  margin-top:38px;
+     color:white; font-family:arial; cursor:pointer; border-radius:2px;    }

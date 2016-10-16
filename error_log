@@ -1,0 +1,2 @@
+[10-Apr-2016 00:45:17 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/differen/public_html/jdconventschool.in/admin/connection.php on line 2
+[10-Apr-2016 00:46:37 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/differen/public_html/jdconventschool.in/admin/connection.php on line 2

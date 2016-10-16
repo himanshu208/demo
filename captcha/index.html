@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>Captca Verification Image</title>
+
+<script type="text/javascript">
+<!--
+function new_captcha()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+
+document.getElementById('captcha').src = 'image.php?x='+ c_miliseconds;
+
+document.getElementById("get_record").innerHTML="<?php echo 'dd'; ?>";
+}
+-->
+</script>
+
+ </head>
+
+ <body onload="new_captcha();">
+ <form action="check.php" method="post">
+     <div id="get_record"></div>
+ <table>
+ <tr>
+ <td>&nbsp;</td>
+ <td><img border="0" id="captcha" src="image.php" alt="">
+ &nbsp;<a href="JavaScript: new_captcha();"><img border="0" alt="" src="refresh.png" align="bottom"></a></td>
+ <tr>
+ <td>Security Code:</td>
+ <td><input type="text" name="security_code" value="">
+ &nbsp;<input type="submit" name="submit" value="Check"></td>
+ </body>
+</html>

@@ -1,0 +1,2 @@
+[13-Apr-2016 08:50:32 UTC] PHP Notice:  Undefined variable: connection_permission in /home/differen/public_html/jdconventschool.in/admin/timetable/create_time_table.php on line 5
+[13-Apr-2016 20:40:15 Asia/Calcutta] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/differen/public_html/jdconventschool.in/admin/timetable/default_weekdays.php on line 40

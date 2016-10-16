@@ -1,0 +1,1215 @@
+/*Login Page Code*/
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{}
+sup{ color:red; }
+a{text-decoration:none; color:#01baad; }
+
+body{ margin:0; padding:0;  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      font-size:77%; 
+
+}
+
+input { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;  box-shadow: inset 0px 1px 7px rgba(0,0,0,0.08);    }
+select { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-weight:400;  box-shadow: inset 0px 1px 7px rgba(0,0,0,0.08);  }
+textarea { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; box-shadow: inset 0px 1px 7px rgba(0,0,0,0.08);  }
+
+
+
+
+.top_step_header{ width:100%; height:auto; float:left;   }
+.middle_div_setep{ width:1050px; height:100px; margin:0 auto;   }
+#top_company_header{ width:100%; height:55px; border-bottom:2px solid whitesmoke;   }
+.step_forward_div{ width:100%; height:35px; float:left; padding-top:5px;    }
+.cercile_div{ width:25px; height:20px; padding-top:5px; font-weight:bold; color:silver; color:white;
+              text-align:center;   background-color:#01baad; border-radius:100%;   }
+
+
+
+
+#user_first_table input[type="text"]
+{
+  outline: 0;
+}
+
+#user_first_table input[type="password"]
+{
+   outline: 0;
+}
+
+
+
+/*organization style*/
+.select_styling{ width:262px; height:30px; }
+#org_first_div{ width:100%;  height:auto; float:left;  }
+#first_org_title_details{ width:1000px; height: 40px; padding-top:10px; border-bottom:1px solid whitesmoke;
+                         margin:0 auto;  padding-left:20px; padding-right:20px;    font-size:20px; font-weight:bold;  }
+#print_page_div{ width:1070px; height:auto; float:left;  }
+#second_work_div{ width:100%; height:auto; float:left;   }
+#middle_work_div_org{ width:1000px; height: auto; padding-top:10px; padding-bottom:10px;   padding-left:20px; padding-right:20px;
+margin:0 auto;  }
+#develop_com_details{ width:100%; height:auto; float:left;   }
+#design_company_details{ width:1000px; height:auto; background-color:whitesmoke;  padding-top:5px; padding-bottom:5px; text-align:right;
+border-top:1px solid whitesmoke; padding-left:20px; padding-right:20px; margin:0 auto; font-size:13px;font-weight:bold; 
+}
+#org_table_style{ width:100%; height:auto; margin:0 auto;  padding-bottom:25px;   }
+.text_box_org{ width:250px; height:25px; padding:2px; border:1px solid silver; border-radius:2px; padding-left:5px; padding-right:5px;
+}
+.text_box_orges{ width:200px; height:25px; padding:2px; border:1px solid silver; border-radius:2px; padding-left:5px; padding-right:5px;
+}
+.text_box_org:focus{ transition-duration:0.5s; box-shadow:0px 0px 10px 1px skyblue; border:1px solid skyblue;   }
+.text_area_style{ width:250px; height:50px; padding-left:5px; padding-right:5px; border-radius:2px;
+border:1px solid silver; }
+.text_area_style:focus{ transition-duration:0.5s; box-shadow:0px 0px 10px 1px skyblue; border:1px solid skyblue;   }
+.save_button{ width:auto; height:40px; background-color:#01baad; color:white; 
+float:right; border:0; border-radius:4px;  font-weight:bold; border-radius:2px; cursor:pointer; padding-left:35px; padding-right:35px;     }
+.save_button:hover{ background-color:#01bafd; }
+ #verify_human{ width:290px; height:70px; border:1px solid silver; margin:0 auto;    }
+ .resend_otp{ width:auto; height:30px; background-color: deepskyblue; border:0px; cursor:pointer; color:white; border-radius:2px;      }
+ #show_verification_code{ width:96%;   height:auto; padding-top:5px; padding-bottom:5px;
+ background-color: aquamarine;padding-left:2%; padding-right:2%; font-weight:bold;    }
+ .select_style{ width:263px; height:32px; border-radius:2px;  padding:2px;  border:1px solid silver;   }
+ .verticle_line{ width:100%; height:1px; background-color:skyblue;   }
+/**/
+#ajax_loader_show{ display:none; }
+#loader_first_div{ width:100%; height:100%; background-color:black; position:fixed; left:0; top:0; 
+                   opacity:0.6; filter:alpha(opacity=60); z-index:999;     }
+#loader_second_div{ width:100%; height:100%;  position:fixed; left:0; top:0; 
+                    z-index:1001;  }
+#loader_first_div_load{ width:105px; height:102px; background-color:white; border:5px solid gray; 
+ position:absolute; left:0; top:0; bottom: 0; right: 0; margin:auto; padding:4em; font-size:16px; 
+font-weight:bold;  border-radius:100%;     }
+#loader_first_div_load center{ margin-top:10px; }
+
+
+.notification_alert{ width:100%; height:auto; padding-top:10px; padding-bottom:10px; background-color:deeppink;
+border:2px solid orange; text-align:center; color:white; border-radius:2px;    }
+.title_details{ width:100%; height:auto; padding-top:5px; padding-bottom:5px;
+               color:royalblue; font-size:16px;  border-bottom:1px solid  aquamarine;
+}
+.mange_first_module{ width:100%; height:auto; float:left;   }
+.module_list{ width:20px; height:20px; background-color:skyblue; border:1px solid red;   float:right;  }
+.company_image{ width:auto; height:auto; margin:0 auto; 
+-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
+}
+.school_image{ width:auto; height:140px; margin:0 auto; border-radius:10px;  
+-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
+}
+.login_first_div{ width:460px; height:auto;  
+ margin:0 auto;    }
+
+.module_list_table{ width:100%; height:auto; margin:0 auto;  margin-top:15px;   }
+#user_first_table{ width:100%; height:auto; float:left; font-weight:bold; color:black;  
+font-size:15px;  margin-top:20%; background-color:whitesmoke;-webkit-box-shadow: 0px 0px 33px 5px rgba(33,73,92,1);
+-moz-box-shadow: 0px 0px 33px 5px rgba(33,73,92,1);
+box-shadow: 0px 0px 33px 5px rgba(33,73,92,1);
+ border-radius:5px;
+}
+.text_box_style{ width:91%; height:35px; padding-left: 38px;  border:2px solid #999999;
+                 
+                border-radius:5px;  padding-right:5px;    }
+
+#login_button{ width:100%; height:44px; background-color:#01baad ; float:left;
+border:2px solid #01baad; font-weight:150; font-size:22px; 
+cursor: pointer; color:white; border-radius: 2px;   }
+.company_name_print{ width:100%; height:auto; text-align:center; font-weight:bold; padding-top:30px; 
+color:#444; 
+}
+.same_height{ height:0px; }
+#user_name{ background-image: url('../images/user_icon.png');  background-repeat:no-repeat;
+            background-position-y:50%;
+}
+#otp_code { background-image: url('../images/key.png');  background-repeat:no-repeat;
+            background-position-y:50%; background-position-x:3%; }
+
+#password_from_user{ background-image: url('../images/pass_icon.png'); background-repeat:no-repeat;
+background-position-y:50%;  }
+.notification_show_alert{ width:100%; height:auto; text-align:center; color:red;    }
+
+/*all page header or fotter include style*/
+#include_header_page{ width:100%; height:auto; float:left;   }
+#include_fotter_page{ width:100%; height:auto; float:left; padding-bottom:10px;   }
+#main_work_div{ width:100%; height:auto; float:left;   }
+#main_middle_work_div{ width:1000px; height: auto; margin:0 auto; padding-left: 10px; padding-right:10px;
+padding-top:10px; padding-bottom:10px;  }
+
+/*header fotter styling*/
+#header_first_page{ width:100%; height:53px; background-color:white; float:left; padding-top:2px;     }
+#fotter_first_page{ width:100%; height:25px;  float:left; position:fixed; background-color: white;
+bottom:0; float:left; }
+#middle_fotter_div{ width:1170px; height:20px; border-top:1px solid silver; margin:0 auto;    }
+.fotter_table_id{ width:100%; height: auto; float:left; margin-top:6px; font-size:11px;    }
+#top_first_div_table{ width:auto; height:auto; float: right;  font-size:12px; }
+#top_first_div_table td{ padding-left:10px; padding-right:10px;  }
+.short_menu_table td{ padding-left:1px; padding-right: 1px; }
+.bottom_arrow{ width:9px; height:6px; background-image:url('../images/bottom_arrow.jpg');
+             background-position-y:-3px; margin-top:0px; 
+              background-repeat:no-repeat;    }
+
+
+.short_menu_table{ width:auto; height:auto; float:right;    }
+#merge_div{ width:1150px; height:55px; margin:0 auto; padding-left:10px; padding-right:10px; 
+border-bottom:1px solid whitesmoke; }
+#school_logo{ width:auto; height:50px; float:left;    }
+#menu_list{ width:1070px; height:50px; float:right;   }
+#session_id{ width:100px; height:50px; background-color:pink; float:right;    }
+#log_out_button{ width:80px; height:20px; background-color:#01baad; padding-top:6px; 
+                border-radius:2px;   float:right; text-align:center; color:white;      }
+#menu_first_table{ width:100%; height:auto; float:left;   }
+#main_second_work_div{ width:1130px; padding-left:10px; padding-right:10px; margin:0 auto; height:auto;     }
+.title_heading{ width:100%; height:20px; border-bottom:1px solid whitesmoke; font-size:14px;   }
+.student_details_table{ width:100%; height:auto; float:left; margin-top:0px;   }
+.student_details_table span{ font-size: 11px;}
+.forward_step_style{ width:100%; height:20px;  }
+.student_details_table td{ padding-top:5px; padding-bottom: 5px; }
+.forward_page_style{ font-size:12px; color:gray; float:left; width:auto; padding-top:10px;     }
+.forward_page_style td{ padding-left:2px; padding-right:2px;  }
+.forward_page_style a{ color:blue; }
+/*SAP HEADER STYLE*/
+
+#sap_header_first_div{ width:100%; height:60px; float:left;    }
+#sap_middel_div_tag{ width:1000px; padding-left:10px; padding-right:10px; border-bottom:1px solid whitesmoke; 
+height:60px; margin:0 auto;  }
+.sap_school_logo{ width:auto; height:55px;  margin:2px; margin-left:0px; background-color: skyblue; float:left;   }
+.school_small_logo{ width:auto; height:55px; }
+.log_out_button{ width:auto; height:25px; padding-top:11px; background-color:#01baad;
+border-radius: 3px; float:right; margin-top:8px; font-weight:bold; padding-left:20px; padding-right:20px;
+cursor:pointer; opacity:0.7;color:whitesmoke;  }
+.log_out_button:hover{ transition-duration:0.7s; opacity:1;  background-color:#01bafd;   }
+
+#sap_fotter_page{ width:100%; height:auto; float:left;   }
+#sap_fotter_middel_div{ width:1000px; height:auto; padding-top:10px; margin: 0 auto; padding-left:10px; padding-right:10px;  
+                        padding-bottom:10px; border-top:1px solid whitesmoke;
+}
+#sap_design_company_details{ width:auto; height:auto; float:right; font-size:12px;    }
+#course_table_list{ width:430px; height:auto;  float:right;  }
+#course_table_list td{ padding:2px; }
+.td_heading{ width: auto; height:22px; background-color:whitesmoke;  text-align:center; font-size:11px; font-weight:bold;
+border:1px solid gray; border-right:0px;  }
+.td_value_heading{ width: auto; height:22px;  text-align:center; font-size:11px; 
+border:1px solid gray; border-right:0px; border-top:0px;  }
+#horizental_line{ width:1px; height:175px; background-color:whitesmoke; float:left; margin-left:20px;
+margin-top:45px; }
+.next_button_show{ width:100%; height:auto; float:left;  padding-top:10px; padding-bottom:10px;    }
+.next_button_styling{ width: 130px; height:35px; background-color: #01baad; border:2px solid #01baad; color:white;
+ float:right; cursor:pointer;  font-weight:bold; }
+.course_details{ width:243px; height:20px; border:1px solid silver; padding-left:5px;
+                padding-top:8px; border-radius:2px;  cursor:pointer; font-size:12px;    }
+.small_selector{ width:20px; height: 20px;  float:right; margin-right:3px; margin-top:2px; 
+background-image:url('../images/bottom_arrow.png'); background-repeat: no-repeat; }
+.check_box_styling{ width:22px; height:16px;  }
+#class_list_show_id span{ position: relative; top:-3px;   }
+
+#left_add_work_div table td { font-size:12px; }
+.search_tabless { width:400px; height:auto; margin:0 auto; border:2px solid black; font-weight:12px;    }
+.search_tabless legend { background-color:black; padding:0.4em;color:white; font-weight:bold;    }
+.select_combo_box{ width:200px; height:25px; padding:3px;   }
+.search_button_css { width:70px; height:25px; background-color:dodgerblue; color:white; border:0;  
+cursor:pointer; }
+
+#search_table { width:auto; height:auto; margin:0 auto; margin-top:20px;    }
+
+.class_all_list{ width:243px; height:auto; background-color:white; position:absolute; padding-left:5px;
+border:1px solid silver; border-top:0px; padding-top:9px; padding-bottom:9px;display:none;    }
+.class_all_list li { font-size:12px; }
+#term_condition_div{ width: 700px; height:320px; border:1px solid silver; border-radius:3px;
+                     margin:0 auto;   overflow-y:auto; padding:10px;  }
+.forward_step{ width:1000px; height:60px; float:left; padding-top:5px;padding-bottom: 5px;    }
+#full_width_table{ width:100%; height:auto;   }
+.verticle_new_line{ width:80px; padding-left:10px;  height:1px; background-color: silver;  }
+.circle_div{ width:20px; height:20px; background-color:silver; border-radius:100%; margin:0 auto;     }
+.heading_short_forward{ width:auto;  text-align:center; font-weight:bold; color:silver; font-size:11px; 
+padding-top:
+    4px; }
+#circle_color{ width:22px; height:22px;   background-color: yellowgreen;}
+#color_set_page{ color:yellowgreen; font-size: 15px; }
+
+/*admission*/
+.select_box_style{ width:210px; height:25px; padding: 3px; border: 1px solid silver;  border-radius:2px; }
+.continue_button_styling{ width:120px; padding-left:30px; padding-right:30px;
+height:36px; background-color:#01baad; font-weight:bold;  font-size:17px;  border:2px solid #01baad;
+
+border-radius:2px; float:right; color:white; cursor:pointer;    }
+.text_box_styling{ width:200px; padding-left:5px; padding-right: 5px;  height:21px; 
+                  border: 1px solid silver; border-radius:2px;    }
+.admission_setep{ display:none;    }
+.permanent_style{ width:370px; margin-top:-10px; font-size:12px;
+                 color:red; font-weight:bold;     height:auto; float:right;   }
+.notification_red{ font-size:10px; color:red; position:absolute; margin-top:5px;    }
+#color_set_page_1{ color:yellowgreen; font-size:12px;  }
+#circle_color_1{ background-color: yellowgreen;}
+
+
+/*header styling*/
+#session_unique_id{ width:150px;  height:25px;  text-align:center; border-radius:2px;    }
+.session_div_tag{ width:170px; height:40px;  float:right; margin-top:-3px;     }
+.menu_list_show{ width:auto; height:auto;color:black;  font-weight:bold;  
+                 float:left; text-align:center; font-size:11px; cursor:pointer;    }
+.menu_list_show:hover{ transition-duration:0.7s; color:blue;  }
+.verticle_menu_line{ width:1px; height:7px; background-color:gray; 
+                    margin-left:3px; margin-right: 3px; margin-top:2px;   }
+/*admin dashboard page*/
+#middle_index_page{ width:100%; height:auto; float:left; margin-top:2px;    }
+#module_list_id_div{ width:50px;  height:200px; float:left; z-index:101; 
+                     overflow: hidden;   position:absolute;}
+#first_small_top_div{ width:100%; height:auto; float:left; margin-top:2px;   }
+#second_small_top_div{ width:100%; height:auto; float:left; margin-top:8px;  }
+.add_document{ background-color:dodgerblue; border:0px; color:white; border:2px solid dodgerblue; cursor:pointer;     }
+#notification_alert_div{ width:50px; overflow: hidden; position:absolute;z-index:99;    height:200px; float:left;  }
+.show_div_toogle{ width:50px;   height:100px; background-color: red;  float:left; margin-right:0px; 
+                 position:relative; cursor:pointer;   
+}
+.middle_work_module{ width:1170px; height:200px;   position:relative; z-index:99;  
+                  background-color:black;margin:0 auto;    }
+.all_marge_module{ width:1050px; padding-left:10px; padding-right:10px;   background-color:red; height:200px; float:left;    }
+.remove_button_style{ width:auto; height:auto; font-size:11px; background-color: white; border:0px; color:red;
+cursor:pointer; }
+
+
+/*dashboard page*/
+#left_side_fixed_button{ width:45px; height:auto; float:left;
+position:absolute;margin-top:10px; z-index:101;    }
+.show_left_slider{ width:45px; height:45px;  float:left;  cursor:pointer; color:white; 
+position:absolute; 
+}
+#show_button_1{ background-image:url('../images/module_icon.jpg'); display:none; }
+#show_button_2{ background-image:url('../images/not_icon.png');}
+.second_full_width{ width:100%; height:auto; margin-top: 10px;  overflow:hidden; position:absolute; z-index:100;  }
+.middle_center_div{ width:1170px; height:auto;  margin:0 auto; background-color: black;   }
+.first_left_work_div{ width:1170px; height:auto; float:left;  }
+.close_button{ width:46px; border:2px solid #E60000;  height:46px; border-radius:4px; cursor:pointer;
+               float:left;  z-index:101; display:none; 
+ background-image:url('../images/remove.png'); background-repeat:no-repeat;  }
+ .module_style_class{ width:135px; border-radius:5px;  height:135px;    float:left;
+ margin:5px; margin-top:4px;  margin-bottom:7px; }
+ .first_left_work_div a{ color:#333333; }
+ .module_tittle_name{ width:100%; height:auto; text-align: center;padding-top:3px;
+ font-weight:bold; }
+ .verticle_lines{ width:100%; height:1px; background-color: whitesmoke;  }
+ .module_images_div{ width:90px;  height:auto; margin:0 auto;   }
+ .module_short_table{ width:100%; height:auto; float:left;   }
+ .module_image{ height:90px; width:auto; margin:0 auto; margin-top:2px;     }
+ .module_style_class:hover{ box-shadow:1px 1px 10px 1px silver; }
+ 
+ /*notification*/
+ .notification_first_class{ width:255px; height:100px; float:left; margin:4px;     }
+ #session_not_active{ width:100%; height:100%; background-color:black; display:none; 
+                      position:fixed; z-index:301; opacity:0.7;
+ filter:alpha(opacity=70);}
+ #session_expire_show{ width:400px; background-color:white; height:150px; position:relative;
+ left:35%; top: 20%;  color:red; font-size:17px; text-align:center; padding-top:20px;    }
+ 
+ /*all dashboard page styling*/
+ #include_header_page{ width:100%; height:auto; float:left;   }
+ #include_fotter_page { width:100%; height:auto; float:left;   }
+ #main_work_first_div{ width:100%; height:auto; float:left;   }
+ 
+ /*transport dashboard*/
+ #middel_work_div{ width:1150px; height:auto; margin:0 auto; padding-left:10px; padding-right:10px;      }
+ .small_dashboard{ width:auto; margin-left:10px; margin-top:10px;border:1px solid white;
+                  height:auto; padding-left:10px; padding-right:10px; font-size:18px; border-radius:2px;
+                  cursor:pointer; color:dodgerblue; 
+                  padding-top:15px; padding-bottom:12px;   float:left; text-align:center;  }
+ .small_dashboard:hover{ border:1px solid whitesmoke; transition-duration:0.6s; 
+        box-shadow:0px 0px 5px 1px silver;  }
+ #top_show_button{ width:100%; height:auto;  float:left; border-bottom:1px solid silver;    }
+ .small_verticle_line{ width: 100%; height: 1px; background-color:whitesmoke;}
+ .small_short_table{ width:250px; }
+ .small_dashboard span{ font-size:12px; color:silver;  }
+ .Short_menu_show{ width:auto; height:auto; cursor:pointer; background-color:white; 
+               padding-top:10px; padding-bottom:10px; padding-left:20px; padding-right:20px;
+  float:left; margin-left:10px;  border-bottom:0px;    }
+ #transport_function{width:auto; height:auto; padding-top:10px; padding-bottom:10px; 
+                     padding-left:20px; padding-right:20px; position:relative; top:1px; 
+  float:left; margin-left:10px; border:1px solid silver; border-top-left-radius:2px;
+  border-top-right-radius:2px;  color:  deeppink; 
+  box-shadow:0px -3px 10px -3px silver;  border-bottom:0px; }
+ .view_button{ width:auto; height:auto; padding-top:8px; padding-bottom:8px; background-color:dodgerblue;
+ float:right; padding-left:15px;padding-right: 15px;  color: white; cursor:pointer; border-radius:1px;  }
+ .middle_left_div_tag{ width:100%; height:auto; float:left;   }
+ .table_middle{ width:auto; height:auto; margin:0 auto;  font-size:12px; font-weight:bold;    }
+ .text_box_class{ width:320px; height: 25px; border:1px solid silver; border-radius:2px; padding-left:4px;
+ padding-right: 4px;}
+ .text_area_class{ width:320px; padding-left:4px; padding-right: 4px;  height:70px;border:1px solid silver;   }
+ .submit_process{ width:120px; height:35px; font-size:14px; color:white; float:right; 
+                border-radius: 2px; cursor:pointer;  background-color: deepskyblue; border:0px;   }
+ .reset_process{  width:120px; height:35px; font-size:14px; color:white; float:right;  
+                border-radius: 2px; cursor:pointer;  background-color:red; border:0px;  margin-right:25px;  }
+ .notification_alert_show{ width:100%; height:30px; padding-top:10px; 
+ text-align:center; font-weight:bold; color:red;  }
+ .select_class{ width:330px; height:29px;  }
+ #last_size_cover{ width:100%; height:30px; float:left;   }
+ #full_student_data {width: 100%; height:auto; float:left; padding-bottom:20px;   }
+ 
+ /*Admission Form Print*/
+ #print_admission_form{ width:100%; height:auto;   }
+ #middle_center_admission_from_print{ width:1000px; height:auto; margin:0 auto;   }
+ .top_school_report_image{ width:100%; height:auto; border-bottom:1px solid silver;}
+ .school_admission_image{ width:100%; height:200px; border:0px;  }
+ #middle_center_admission_from_print span{ width: 100%;   font-size:17px; text-align:center;  }
+ .heading_title{ width:100%; height:auto;  text-align: center; height:30px; padding-top:5px;   
+ font-size:22px; font-weight:bold;  }
+ .admission_form_tables{ width:100%; height:auto;  }
+ .admission_form_tables td{ padding-top:4px;  vertical-align:top;   padding-bottom:5px;
+                           padding-left:4px; padding-right:4px;  }
+ .height_maintain{ width:30px; height:10px; font-weight:bold;  }
+ .student_image{ width:135px; height:150px;  position:absolute; 
+                border:1px solid gray; margin-top:-6px;   }
+ .parent_image{ width:135px; height:150px; 
+                border:1px solid gray; }
+ #first_top_div_tags{ width:100%; height:60px; float:left; border-bottom:1px solid gray;   }
+ .button_style{ width:auto; height:28px; padding-top:13px; padding-left:35px; padding-right:35px;
+ background-color:dodgerblue; float:right; margin-right:10px; margin-top:15px;  color:white;
+ font-weight:bold; cursor:pointer;  }
+ #page{ width:100%; height:auto;  }
+ .use_height_maintain_div{ width:100%; height:40px; float:left;   }
+ 
+ #top_admission_details_table{ width:100%; height:auto; float:left;   }
+ .first_small_text_box{ width:210px; background-color:azure; border:1px solid silver; height:21px;
+ padding-left:10px; padding-right:10px;  }
+ 
+ 
+ 
+ 
+ /*recipt*/
+     div.page
+      {
+        page-break-before: always;
+       
+      }
+  .view_button_style {width:auto; height:30px; padding-left:22px; padding-right:22px; float:right; 
+                    color:white;  background-color: deepskyblue; cursor:pointer; border:0px;  float:left;       }
+  .student_photos{ width:200px; height:240px; background-color:white; border:1px solid whitesmoke;
+                 box-shadow:0px 0px 5px 2px silver;  display:none; 
+                  position:absolute; margin-top:-260px;   }
+  .student_photo_table{ width:100%; height:auto; margin-top:2px;   }
+  .student_photo_table td{ padding-left:7px; padding-right:7px; font-weight:bold;   }
+  .verticle_lines_table{ width:100%; height:1px; background-color:skyblue;   }
+  .student_images_change{ width:140px; height:170px; margin-left:23px;     }
+  .bottom_white_show{ width:60px; height:24px;float:left;  margin-top:14px;
+background-image:url('../images/bottom_under_arrow.png');  background-repeat:no-repeat; 
+  }
+  .back_admission_page{ width:auto; background-color:greenyellow; float:right; 
+  padding-left:15px; padding-right:15px; padding-top:12px; padding-bottom:12px; font-weight:bold;
+  position:absolute; margin-top:-6px; cursor:pointer; margin-left:160px;    }
+  
+  
+  /*search first div*/
+  #search_first_div{ width:100%; height:auto;  float:left; border-bottom:1px solid gray; padding-bottom:10px;      }
+  .search_checked_styling{ width:20px; height:20px; cursor:pointer;  border-radius:100%;   }
+  .top_search_type_table{ width:auto; height:auto;     }
+  .search_table{ width:auto; height:auto; padding-top:12px;   }
+  .top_search_type_table td{ padding-left:2px; padding-right:2px; }
+  .select_search_style{ width:250px; height:28px; border:1px solid silver;  padding-left:4px; padding-right:4px;    }
+  .search_box_styling{ width:320px; height:25px; border:1px solid silver; padding-left:4px; padding-right:4px;    }
+ .search_advance{width:420px; height:25px; border:1px solid silver; padding-left:4px; padding-right:4px;  }
+  .search_table td{ padding-left:5px; padding-right:5px;  }
+  #student_record_data{ width:100%; height:auto; float:left;   margin-top:2px;  }
+  .hide_div_style{ width:auto; height:auto; float:right;  font-weight:bold; color:dodgerblue;
+cursor:pointer; padding-left:20px; padding-right:20px; padding-top:4px; padding-bottom:4px;  border-radius:1px;     }
+  .hide_div_style:hover{  box-shadow:0px 0px 3px 1px silver;  }
+  .student_table_details{ width: 100%; height:auto; float:left; padding-top: 7px; font-size:12px;   }
+  #th_tr_style td{ background-color:deeppink; text-align:center;  color:whitesmoke;  height:30px; padding-left:3px; padding-right:3px;   }
+  .td_heading_style td{ height:33px; padding-left:3px; padding-right:3px; border-bottom:1px solid silver;   }
+  .first_td_left{ border-left:1px solid silver; text-align:center; font-weight:bold;    }
+  .first_td_right{ border-right:1px solid silver;  }
+  #student_li_record{ width:330px; height:auto;position:absolute; background-color:white; float:left;
+  background-color:white;  max-height:500px; overflow:auto;  }
+  #student_li_record li{ border:1px solid silver; height:22px; padding-top:5px; font-size:12px;
+  color:blue; font-weight:100; padding-left:5px; padding-right:5px; border-top:0px;     }
+  #student_li_record li:hover { background-color: aquamarine; cursor:pointer;  }
+  #student_li_record span{ color:gray; font-size:10px;   }
+  #student_li_record b{ color:black; }
+  p{ margin:0; padding:0; padding-top:2px;  float:left; padding-left:5px;    }
+.list{ display:none; }
+  .selected{
+font-weight:100;   
+    background : aquamarine;
+}
+li a{ display:none; }
+#search_button{ width:100px; height:30px; background-color: dodgerblue; float: right;
+border:0px;  font-weight:bold; color:white; margin-right:2px;  cursor:pointer;     margin-top:10px; border-radius:4px;   }
+#autocomplete_data{ position:absolute; width:430px; background-color:white; 
+height:auto;  }
+ul { overflow:auto; position:relative;  }
+#student_data_advance_search { overflow:auto; max-height:70px; }
+#student_data_advance_search li{ border:1px solid silver; height:22px; padding-top:5px; font-size:12px;
+  color:blue; font-weight:100; padding-left:5px; padding-right:5px; border-top:0px;    }
+#student_data_advance_search li:hover { background-color: aquamarine; cursor:pointer;  }
+#student_data_advance_search li span{ color:gray;  }
+#student_data_advance_search b{ color:black; }
+#small_ajax_loading{ position:absolute; float:left; margin-left:-40px; margin-top:-11px; display:none;    }
+
+
+/*edit delete view button styling*/
+.edit_buttons{ width:27px; cursor:pointer; height:27px; background-repeat:no-repeat;  border:0px;
+             margin-right:10px; background-image:url('../images/edit_button.png'); background-repeat:no-repeat;   float:right;    }
+.delete_button{ width:27px; cursor:pointer;  background-image:url('../images/delete_button.png');  height:27px;
+                float:right;    }
+.view_buttonsss{ width:27px; cursor:pointer; height:27px; background-repeat:no-repeat; 
+                 margin-right:10px; background-image:url('../images/view_button.png');
+                 float:right;    }
+
+.print_button_show{ width:auto; height:auto; padding-top:10px; padding-bottom:8px; margin-bottom:4px;
+                    font-weight:bold; cursor:pointer;  
+background-color:springgreen; float:right; margin-right:5px; padding-left:30px; padding-right:30px;      }
+
+
+.previous_button_style{ width:auto; height:auto; padding-top:5px; padding-bottom:5px;
+color:blue; border:1px solid blue; float:left; padding-left:20px; padding-right:20px; cursor:pointer; margin-top:5px;
+}
+.previous_button_style:hover{ background-color:blue; color:white;  }
+.small_short_page_no{ width:auto; height:auto; padding-top:5px; padding-bottom:5px;
+padding-left:15px; padding-right:15px; border:1px solid blue; float:left; margin-left:4px; margin-right:4px;
+margin-top:5px; cursor:pointer;  text-align:center; }
+.small_short_page_no_dotted{ padding-right:15px; font-size:17px; font-weight:bold;
+                             text-align:center; float:left; margin-left:4px; margin-right:4px;
+margin-top:5px; cursor:pointer; }
+.small_short_page_no:hover{ background-color:blue; color:white;  }
+.forward_pages{ width:auto; height:auto; float:right;   }
+#full_student_data span{ font-size:17px; }
+
+#student_profile_edit{ width:1150px; height:auto; font-weight:bold; font-size:21px; margin:0 auto; padding-top:10px;
+border-bottom:1px solid black; padding-bottom:10px;  }
+.branch_details_table{  width:100%; height: auto; margin:0 auto; margin-top:20px;   }
+.branch_details_table td{ padding-top:9px; }
+
+//view image opacity
+#view_full_image_div_opacity{ width:100%; height:100%; position:fixed;   
+                              background-color:black;   }
+
+.view_image_div{ width:auto; height:19px; background-color:darkviolet; padding-left: 15px; padding-right:15px;
+                color: white; padding-top:5px; font-weight:bold; font-size:12px;   float:left;  
+cursor:pointer; }
+.select_class{ width:50%; height:auto; float: left; margin-top:10px;   }
+.select_record_save{ width:45%; height:auto; margin:0 auto; margin-top:px;    }
+.td_horizental_line{ width: 100%; height:1px; background-color:gray;  }
+.class_course_name{ width:100%; height:auto; float:left; margin-top:10px;   }
+.class_name{ width:30%; height:28px; border:1px solid blue; border-bottom:0px;
+            padding-top:5px; text-align:center; background-color: white;
+            position:relative; z-index:101;  top:1px; }
+.section_name{ width:100%; height:30px; border:1px solid blue;  float:left;  z-index:99;    }
+.work_main_div{ width:100%; height:60px;  border-bottom:1px solid dodgerblue;  float:left; margin-top:10px;     }
+.attendance_select{ width:200px; height:26px; border:1px solid silver;  }
+ .add_button_reset_button{ width:70px; height:28px; margin-left:12px; font-size:12px; 
+                             border:1px solid gray;color:whitesmoke; font-weight:bold;  
+                             background-color:dodgerblue; border:0px;  float:right; cursor:pointer;   }
+ .main_search_table{ width:auto; float:left; margin-top:15px; margin-left:120px;    }
+ .add_button_reset_button{ width:70px; height:28px; margin-left:12px; font-size:12px; 
+                             border:1px solid gray;color:whitesmoke; font-weight:bold;  
+                             background-color:dodgerblue; border:0px;  float:right; cursor:pointer;   }
+ .all_select_option_table{ width:auto; height:auto; border:1px solid silver; padding-left:20px; padding-right:20px;
+ padding-top:7px; padding-bottom:7px; background-color: whitesmoke; }
+ 
+ #main_attendance_work_div{ width:100%; height:auto; float:left; margin-top:5px;    }
+ .student_record_div{ width:100%; height:auto;  float:left;   }
+ 
+//mark attendance  
+ 
+ #attendance_tabel{ width:100%; height:auto;  }
+ .tr_heading_style{ width:auto; height:40px; text-align:center;  background-color:whitesmoke;  
+ border:1px solid gray; border-right:0px; font-weight:bold; font-size:12px; padding-left:2px; padding-right:2px;     }
+ .attendance_check_box{ width:20px; height:20px; cursor: pointer; }
+ .hr_attendance_check_box{ width:20px; height:20px; cursor: pointer; }
+ .attendance_td_style{ width: auto; height:45px; border:1px solid gray; border-right:0px;  border-top:0px;
+                     font-size:12px;  padding-left:4px; padding-right:4px; 
+
+ }
+ .hr_attendance_td_style{ width: auto; height:45px; border:1px solid gray; border-right:0px;  border-top:0px;
+                     font-size:12px;  padding-left:4px; padding-right:4px; 
+
+ }
+ .green_color_all{ background-color:#E0FFD1; color:black;     }
+ 
+ .td_attendance_check_box_p{ width:16px; height:16px; cursor: pointer; }
+.td_attendance_check_box_a{ width:16px; height:16px; cursor: pointer; }
+.td_attendance_check_box_l{ width:16px; height:16px; cursor: pointer; }
+.td_attendance_check_box_lt{ width:16px; height:16px; cursor: pointer; }
+
+.td_hr_attendance_check_box_p{ width:16px; height:16px; cursor: pointer; }
+.td_hr_attendance_check_box_a{ width:16px; height:16px; cursor: pointer; }
+.td_hr_attendance_check_box_l{ width:16px; height:16px; cursor: pointer; }
+.td_hr_attendance_check_box_lt{ width:16px; height:16px; cursor: pointer; }
+
+
+
+
+ .reprsent_color{ width:19px; border-radius: 3px; height:19px; border:1px solid silver;  }
+ .reprsent_table { width:auto; height:auto; border:1px solid silver; float:left; margin-top:5px;
+ padding-left:15px; padding-right:15px; border-radius:3px;   }
+ .total_student_record_div{ width:500px; height:auto; margin-top:5px;
+                          border-radius:5px;   float:left; margin-left: 10px;  }
+ .button_styling{ width:auto; padding-left:45px; padding-right:45px;
+ background-color:dodgerblue; height:40px; border:0px; color:white; float:right;
+ cursor:pointer; margin-right:15px;  font-size: 14px; }
+ .month_calander_style{ width:100%; height:35px; background-color: lavender; border:2px solid dodgerblue; float:left;   margin-top:4px;  }
+ .date_calander_style{ width:100%; height:35px; background-color: seashell; border:2px solid deeppink; float:left; margin-top:8px; 
+margin-bottom:10px;  }
+ 
+ 
+ .left_side_title{ width:140px; height:25px; padding-top:10px; background-color:dodgerblue; float:left;
+  color:white;  text-align:center;   }
+ .center_month_div{ width:auto; height:35px; 
+ padding-left:30px; padding-right:30px; color:black; font-weight: bold; font-size:18px; }
+ .button_next_style{ width:28px; height:28px; float:left; cursor:pointer;  position:relative; z-index:301;    }
+ #dodblue_previous_button{ background-image:url('../images/dodblue_previous_button.png'); background-repeat:no-repeat;  }
+ #dodblue_next_button{ background-image:url('../images/dodblue_next_button.png'); background-repeat:no-repeat; }
+ #deeppink_previous_button{ background-image:url('../images/deeppink_previous_button.png'); background-repeat:no-repeat; }
+ #deeppink_next_button{ background-image:url('../images/deeppink_next_button.png'); background-repeat:no-repeat; }
+ .attendance_month_register{ width:100%; height:32px; float:left;  }
+ .button_viem_month{ width:auto; height:23px; padding-top:7px; background-color: darkviolet;
+ float: right; padding-left:20px; padding-right:20px; cursor:pointer;border-radius:2px; cursor:pointer;     color:white;   }
+ .class_or_section{ width:auto; height:auto; float:left; border:1px solid silver; padding:3px;
+ background-color:whitesmoke; border-radius:3px;  }
+ .date_text_box{ width:150px; height:19px; padding-left:3px; padding-right:3px; border:1px solid gray;     }
+ .td_data_style{ width:auto; height:28px; border-left:1px solid black; border-bottom:1px solid black; 
+ background-color: white; padding-left:1%; padding-right:1%; font-size:12px;  }
+ .first_table_button_div{ width:100%; height:auto; float:left;    }
+ .attendance_button_style{ width:auto; height:22px; padding-top:8px; background-color:dodgerblue; float:right;
+ padding-left:25px; padding-right: 25px; margin-bottom:2px; color:white; margin-right:5px;border-radius:2px;   }
+ .att_view_button{ width:90px; height:19px; background-color:blue; padding-top:5px; text-align:center; border-radius:2px;
+ color: white; cursor:pointer; float:right; margin-right:5px;    }
+ .date_table{ float:left; margin-top:10px; margin-left:5px;   }
+ .by_date{ width:auto; height:auto; background-color:whitesmoke; padding:8px;    }
+ 
+
+ 
+ .sub_menu_lisst{ width:100px; height:50px; position:absolute; margin-top:0px;  z-index:101; 
+margin-left:-5px; display:none; border-radius:5px;   }
+ .list_menu{ width:95%; padding-left: 5%; height:auto; float:left;    }
+ 
+ .menu_list_li{ width:auto; height:auto;  }
+ .menu_new_div{ width:170px; height:auto; padding-top:5px;
+               border-radius:4px;  padding-bottom:5px; background-color:#333;   
+ float:left; padding-top:10px; margin-top:19px;   }
+ .menu_new_div:after {
+		content: '';
+		position: absolute;
+		right:21px;
+		top:14px;
+		border-left:10px solid rgba(0, 0, 0, 0);
+		border-right:10px solid rgba(0, 0, 0, 0);
+		border-bottom:10px solid #333;
+	}
+        
+    #sub_menu_2 .menu_new_div:after {
+    right:26px;    
+    }
+   .sub_menu_list{ background-image:url('../images/arrow_down.png'); background-repeat:no-repeat;
+   background-position-x:95%; background-position-y:20%; 
+   }     
+        
+        
+   .menu_list_li li { text-align:center; border-bottom:1px solid white; color:white; font-size:12px;
+   padding-bottom:5px;margin:5px; font-weight:bold;   } 
+        
+ 
+ //telephone diary
+#div_search_top{ width:100%; height: auto; float:left;  }
+ .table_top_telephone_diary{ width:auto; height: auto; margin:0 auto; background-color: paleturquoise;
+ padding-left:25px; padding-right: 25px; padding-top:5px; padding-bottom:5px; font-weight:bold;  
+ border-radius:3px; }
+ .table_search_middle{ width:auto; height:auto; margin:0 auto;  margin-top:10px;  }
+ .radio_check{ width:15px; height:15px;  }
+ .search_text_style_box{ width:310px; height:29px; border:1px solid silver; padding-left:10px;padding-right:10px;     }
+ .button_styling_telephone{ width:auto; height:31px; color:white; font-weight:bold;   background-color:dodgerblue; border:0px;
+                           padding-left:15px; padding-right:15px;    }
+ .border_bottom_line{ width:100%; height:1px; background-color:gray;  margin-top:15px;   }
+ .select_style_box{ width:330px; height:29px;  }
+ .middle_table_show{ width:auto; height:auto; margin:0 auto; margin-top:30px;    }
+ .button_style_ing{ width:auto; height:30px; background-color:dodgerblue;  float:right; border:0px;
+ color:white; padding-left:25px; padding-right:25px; cursor:pointer;    
+ }
+ .add_button_style{ width:auto; height:29px; padding-left:15px; padding-right:15px;
+                   color:white;  background-color: seagreen; border:0px;  cursor:pointer;   }
+ .subject_th_styling{ width:auto; height:23px; font-size:12px; text-align:center;
+                    font-weight:bold; background-color:aliceblue;   }
+ .text_box_subject_styling{ width:150px; border:1px solid silver; padding-left:4px; padding-right:4px;
+                           height:24px;  }
+ .select_box_subject_styling{ width:90px; height:24px; border:1px solid silver;   }
+ #time_table_style{ width:100%; height:auto; float:left; border-bottom:1px solid whitesmoke;
+                    padding-bottom:10px;padding-top:10px;     }
+ .select_box_time_table{ width:180px; height:28px; padding:3px;   }
+ #time_table_lacture_div{ width:100%; height:auto; float:left;   }
+ .th_styling_time_table{ width:auto; height:40px; background-color: turquoise;  
+text-align:center; font-weight:bold; font-size:12px;border:1px solid silver; 
+}
+
+ #table_time_table_manage{ width:100%; height:auto; float:left;     }
+ .subject_time_table{ width:108px; height:22px; border:1px solid silver;  font-size: 11px; }
+ .subject_time_table_left{ width:auto; float:left; font-size:11px;   }
+ .text_box_time_table{ width:47px; height:22px; font-size:11px;  border:1px solid silver;
+ }
+ .td_time_table_style{ border:1px solid silver; padding-bottom:5px; padding-top:5px;
+ background-color:  #E0FFD1;
+ }
+ .text_box_time_table_room {  width:47px; height:22px; font-size:14px; 
+                            font-weight:bold;  border:1px solid silver;  text-align:center;  } 
+ #time_table_full_opacity{ width:100%; height:  100%; background-color:black; position:fixed;
+ left:0; top:0; opacity:0.5; z-index:301; display:none;   }
+ #main_work_div_time_table{width:100%; height:  100%;  position:fixed;
+ left:0; top:0;  z-index:301; display:none;  }
+ #middle_work_div_time_table{ width:500px; height:385px; 
+                              background-color:white; margin:0 auto;  margin-top:4%;   }
+ 
+ .next_button{ width:100px; height:26px; padding-top:7px; background-color:dodgerblue; text-align:center; font-weight:bold;
+  float:right; margin-right:20px;font-size:14px; cursor:pointer; color:white;    }
+ #first_div_top{ width:100%; height:40px; float:left;   }
+ #second_div_top{ width: 100%; height:auto; float:left;  }
+ .close_button_style{ width:32px; height:32px; 
+                     cursor: pointer; background-image:url('../images/cross.png');
+                     background-repeat:no-repeat; border:2px solid black; border-radius:3px;
+                    background-position-y:3px; background-position-x:3px;   float:right; margin-top:10px; margin-right:15px;
+ }
+ .lunch_time_table{ width:auto; height:auto; font-size:12px; margin:0 auto;       }
+ .lunch_time_table td{ padding-top:5px; }
+ .start_lunch_time{ width:62px; border:1px solid silver; height:23px; padding-left:2px;     }
+ .lunch_td_style{ background-color: lightcyan; border:1px solid silver; text-align:center; height:40px;    }
+ #table_calender_style{ width:100%; float:left; margin-top:20px; border:1px solid whitesmoke;    }
+ #table_calender_style th { height:35px; background-color:aliceblue;  }
+ #table_calender_style td{  border: 1px solid whitesmoke; }
+ .calender_days{ height:45px; width:180px;  background-color:azure; text-align:center; font-weight:bold;    }
+ .calender_date{ height:80px; vertical-align:top;  }
+ .calender_date_top{ width:30px; height:23px; background-color:palegreen; border:1px solid whitesmoke;
+ margin-left:4px; margin-top:4px; text-align:center; padding-top:7px;  font-size:13px; font-weight:bold;     }
+ 
+ 
+ #visitor_log_id{ width:99%; border:1px solid silver; padding:5px; float:left;    }
+ .visit_log{ width:150px; height:22px; text-align:center; padding-top:8px; border:1px solid silver; 
+             background-color:azure;
+ position:absolute; margin-top:-20px; margin-left:10px; float:left; font-weight:bold; border-radius:3px;     }
+ .main_work_data{ width:100%; }
+ .visitor_log_table{ width:100%; height: auto; margin:0 auto; font-size:12px; margin-top:20px;    }
+ .visitor_log_text{ width:180px; height:25px; padding-left:4px; padding-right:4px;
+                  text-align:center;  background-color:whitesmoke; border:1px solid silver;    }
+ .select_box_visit_log{ width:180px; height:26px; border:1px solid silver; padding:3px;    }
+ .text_box_in_time{ width:180px; height:25px; padding-left:4px; padding-right:4px;
+                  text-align:center;   border:1px solid silver; }
+ .text_area_small{ width:180px; height:33px;  }
+ .visitor_table{ width:100%; height:auto; float:left; font-size:12px; margin-top:15px;   }
+ #visitor_table{ width:100%; height:auto; float:left; font-size:12px; margin-top:15px;   }
+ .image_selection{ width:250px; }
+ .visitor_text_box{ width:185px; height:24px; border:1px solid silver; padding-left:5px; padding-right: 5px;    }
+ .text_area_full_big{ width:280px;  height:38px;}
+ .other_person{ width:100%; height:auto;margin-top:5px; float:left;     }
+ .person_selection_table{ width:auto; height:20px; background-color: lightblue; font-size:12px; font-weight:bold;
+ padding-left:5%; padding-right:5%;   }
+ 
+ #multiple_person{ width:auto; height:auto; float:left;   }
+ .person_photos{ width:195px; height:auto; float:right;    }
+ .person_self_picture { width: 160px; height:200px; border:1px solid whitesmoke; background-color: silver;
+ margin:0 auto; }
+
+ 
+ //view time table
+ .second_work_div{ width:100%; height:auto; float:left;   }
+ .view_time_table{ width:100%; height: auto; float:left;    }
+ .view_th_style{ width:auto; background-color:aquamarine; border:1px solid silver;  text-align:center; height:40px;
+                font-weight:bold;    }
+ .subject_td_style{ width:auto; height:100px; font-size:15px;  
+                   background-color:white; border:1px solid silver;  text-align:center;    }
+ .view_lunch_td{ width:100%; height:30px; background-color:azure; text-align: center; color:red;
+ font-weight:bold;border:1px solid silver;   }
+ .top_button_show{ width:100%; height:40px; float:left;   }
+ .time_table_button{ width:auto; padding-left:30px; height:22px; padding-top:8px; background-color:green; float:left;
+ text-align: right; margin-left:10px; color:whitesmoke; padding-right:10px; margin-top:5px;  border-radius:2px; 
+ cursor:pointer; }
+ .time_table_buttons{ cursor:pointer; 
+    width:auto; padding-left:30px; height:22px; padding-top:8px; background-color:blue; float:right;
+ text-align: right; margin-left:10px; color:whitesmoke; padding-right:10px; margin-top:5px;  border-radius:2px;  
+ }
+ .top_class_section{ width:100%; height:50px; float:left;   }
+ .class_section_name{ width:300px; height:45px; background-color: turquoise; margin:0 auto;     }
+ .multiple_person_table{ width:100%; height:auto; font-size:12px;  }
+ .visitor_th_style { background-color:aqua; height:16px; padding-left:10px; padding-right:10px;
+  }
+ .multiple_person_table td{ border:1px solid whitesmoke; }
+ 
+ 
+ 
+ /*table details*/
+ .table_details{ width:100%; height: auto; float:left; margin-top:10px;   }
+ .th_styling { background-color: aquamarine; text-align:center; font-weight:bold; border:1px solid gray;
+ border-right: 0px; height:30px; font-size:12px; }
+ #top_buttons_div{ width: 100%; height:25px; float:left; margin-top:10px;   }
+ .td_style{ padding-left:10px; padding-right:10px; border-bottom:1px solid gray; border-left:1px solid gray;
+ height:auto; font-size:12px;  padding-bottom:10px; padding-top:10px; margin:auto;
+  }
+ 
+ .edit_delete_buttons{ width:60px; height:19px; padding-top:5px; color:white; border-radius:2px; color:white; background-repeat:no-repeat; 
+               background-position-y:3px;font-size:12px;
+              background-position-x:3px; 
+              background-image:url('../images/edit.png');  cursor:pointer;
+                     text-align: right; padding-right:6px;  background-color:red; float:left; margin-left:5px; }
+ .view_delete_buttons{ width:60px; height:19px; padding-top:5px; color:white; border-radius:2px; color:white; background-repeat:no-repeat; 
+               background-position-y:4px;font-size:12px;
+              background-position-x:5px; 
+              background-image:url('../images/eye_button.png');  cursor:pointer;
+                     text-align: right; padding-right:6px;  background-color:red; float:left; margin-left:5px; }
+   
+ .edit_delete_button{ width:60px; height:19px; padding-top:5px; color:white; border-radius:2px; color:white; background-repeat:no-repeat; 
+               background-position-y:3px;font-size:12px;
+              background-position-x:3px; 
+              background-image:url('../images/remove_1_1.png');  cursor:pointer;
+                     text-align: right; padding-right:6px;  background-color:red; float:left; margin-left:5px; }
+  
+  .button_show_style { padding-left: 30px;
+  width:auto; height:23px; padding-top:8px; color:white; border-radius:2px; color:white; background-repeat:no-repeat; 
+               background-position-y:7px;font-size:12px;
+              background-position-x:8px;  float:right; 
+              background-image:url('../images/printer_button.png');  cursor:pointer;
+                     text-align: right; padding-right:6px;  background-color:blue;}
+  
+  .select_class{ width:330px; border:1px solid silver; height:30px; padding:3px;    }
+  
+  .branch_logo_show{ width:150px; height:150px; border:10px solid whitesmoke;  border-radius:10px;   }
+  .show_logo{ width:100%; height:100%;  }
+  .report_logo_show{ width:97%; height:25px; padding-top:7px; background-color:aquamarine; border:1px solid aqua;
+  font-weight:bold; padding-left:3%; border-radius:4px; font-size:15px;   }
+  .report_logo{ width:100%; height:auto;  }
+ .fotter_cover_div{ width:100%; height:15px; float:left;    }
+ .left_add_work_div{ width:35%; height:auto; float:left; margin-top:20px; }
+ .right_fetch_work_div{ width:62%; height:auto; float:right; margin-top:20px; }
+                          
+.verticle_length{ width:1px; height:100%; background-color:silver;float:left; margin-left:1%;    }
+ .left_add_work_div .text_box_org { width:250px; }
+ .left_add_work_div table{ padding:5px; margin-top:20px;  }
+ .left_add_work_div .text_area_style { width:250px; }
+ 
+ .heading_title_td{ width:97%; height:26px;  padding-top:7px;
+                    border-bottom:2px solid gray;
+ font-weight:bold; padding-left:3%;  font-size:17px;  margin-right:1%; float:left;    }
+ .session_fetch_details{ width:100%; height: auto; float:left;    margin-top:15px; }
+ .table_heading td{ background-color:aquamarine; padding:5px;font-weight:bold; border:1px solid gray;
+ border-right:0px; text-align:center; font-size:12px;  }
+ .empty_db_alert td{ width:auto; height:30px; border:1px solid gray; border-top:0px; color:red; 
+ text-align:center; font-weight:bold;  }
+ .td_data_style td{ border:1px solid gray; height:32px; border-top:0px; border-right:0px;
+                   text-align:center; padding:5px; font-size:12px;   }
+ 
+ 
+ 
+ .pop_up_div{ width:100%; height:100%; background-color:black; position:fixed; z-index:999; opacity:0.1;
+ filter: alpha(opacity=10); -moz-opacity: 0.1; -khtml-opacity: 0.1;
+ 
+ }
+ 
+ 
+ 
+ .second_pop_up_div{ width:100%; height:100%; position:fixed; z-index:1000;  
+ }
+ .pop_up_middle_div{ width:400px; height:auto; padding:2em; background-color:white;
+                  border-radius:5px; box-shadow:0px 1px 20px 0px black; 
+ position:absolute;
+    top:40px;
+   
+    left: 0;
+    right: 0;
+    margin: auto;       
+ }
+ .close_div{ width:100%; height:40px; float:left;   }
+ .middle_center_work_div { width:100%; height:auto; float:left; padding-top:2em; padding-bottom:2em; 
+ font-size:18px; text-align:center; color:green;    }
+ .last_bottom_close_div{ width:100%; height:40px; float:left;    }
+ .ok_button_style{ width:auto; height: auto; background-color:black; border-radius:3px; float:right;
+ padding:1em; padding-left:1.9em; padding-right:1.9em; color:white; font-weight:bold; cursor:pointer;    }
+ .close_div{ width:35px; height:35px; float:right; cursor:pointer; border:2px solid red; background-position-x:40%;
+             background-position-y:40%; border-radius:5px; 
+            background-image:url('../images/close_button.png'); background-repeat:no-repeat;  }
+ .edit_first_div{ width:100%; height:100%;  }
+ .edit_top_header{ width:100%; height:50px; background-color: aliceblue;  float:left;   }
+ .title_name{ width:auto; height:auto; padding:.9em; font-weight:bold; font-size:17px; color:black; float:left;  
+ }
+ .close_window_button{ width:auto; height:auto; padding:1em; background-color:red; color:white;
+ text-align:center; float:right; font-weight:bold; margin:0.35em; margin-right:2em; cursor:pointer;   
+ border-radius:5px; }
+ .edit_fotter_div_tag{ width:100%; height:25px; background-color:whitesmoke;  padding-top:1em; text-align:center;
+ font-weight:bold; float:left;  }
+ .edit_main_work_div{ width:100%; height:auto; padding:2em; padding-left:0; padding-right:0;  float:left;    }
+ .edit_center_div_tag{ width:auto; height:auto;  margin:0 auto; font-size:12px;     }
+ .edit_center_div_tag table { font-size:12px; margin:0 auto;  }
+ .edit_center_div_tag input { font-size:12px; }
+ 
+ .change_password { width: 150px; height:40px; font-weight:bold; color:white;
+                  float: right; border:0; border-radius:3px; cursor:pointer;
+                  background-color:darkorange; border-bottom:3px solid darksalmon;  }
+ .style_pass{ width:140px; height:25px; padding:5px; padding-left:10px; padding-right:10px;
+             color:white; border-radius:4px; color:black;    }
+ 
+.result_show{ width:100px; height:18px; padding-top:5px; border-radius: 4px; text-align:center; color:white;   }
+.empty_td{ height:33px; border:1px solid gray; border-top:0px; text-align:center; font-weight:bold; color:red;     }
+#calander_show{ width:100%; height:auto; float:left;   }
+.insert_table{ width:auto; height:auto; margin: 0 auto; font-size:12px; margin-top:15px;  }
+.text_box_styles{ width:280px; height:25px; border:1px solid silver; padding-left:5px; padding-right:5px;     }
+.text_area_styles{ width:280px; height:100px; border:1px solid silver;   }
+.table_details{ width:100%; height:auto; float:left;   }
+.th_heading_style td{ width:auto; padding-top:4px; padding-bottom:4px;  
+                      height: auto; background-color:aquamarine; border:1px solid black; border-right:0px;
+padding-left:2px; padding-right:2px; font-size:11px; text-align:center; font-weight:bold; height:25px;     }
+.td_styling_data td{ width:auto; padding-left:2px; padding-right:2px; text-align:center;
+border:1px solid black; padding-top:8px; padding-bottom:8px; border-right:0; border-top:0; font-size:11px;       }
+.filter_div_tag{ width:100%; height:auto; padding-top:10px; padding-bottom:10px; float:left;
+border-bottom:1px solid gray; }
+.text_box_org_ing{ width:190px; height:25px; border:1px solid silver; padding-left:5px; padding-right:5px;     }
+.filter_button{ width:70px; height:30px; border: 0px; border-radius:2px; background-color:dodgerblue;
+color:white; float:right; margin-top:10px; cursor:pointer;   
+}
+.add_button_styles{ width:50px; height:20px; padding-top:6px; background-color:darkslateblue; margin-top:7px;  
+text-align:center; background-image: url('../images/add.png'); background-position-y:45%;  background-repeat:no-repeat;   
+text-align:right; padding-right:10px;color:white; border-radius:3px; background-position-x:10%; 
+font-size:13px; }
+.filter_div{ width:100%; height:auto; padding-top:2em; padding-bottom:2em;  border-bottom:1px solid silver;     }
+.select_filter{ width:210px; height:25px; padding:3px;  border:1px solid silver;   }
+.text_search{ width:220px; height:19px;  }
+.view_button_styles{ width:auto; height:20px; padding-top:7px; background-color:dodgerblue;  color:white;
+border-radius:3px; cursor:pointer; padding-left:4px; padding-right:4px;   float:left;  }
+.reallot_button{ background:none; border:0; color:orange; cursor:pointer; text-decoration:underline;     }
+#employee_search{ background-color:aliceblue; border:1px solid dodgerblue; padding:1em; 
+border-radius:4px; }
+.tr_style td{ width:auto; height:15px; background-color:whitesmoke; border-left:1px solid silver;
+              text-align:center;   
+  }
+  #sub_route_table td{ padding:2px; text-align:center;  padding-top:8px; padding-bottom:8px;   }
+  .text_style_sub_text{ width:210px; height:24px; border:1px solid silver; padding-left:4px; padding-right:4px;     }
+ .time_picker{ width:210px; height:24px; border:1px solid silver; padding-left:4px; padding-right:4px;    }
+ .td_style_sub td{border-left:1px solid silver;  border-top:1px solid silver;  }
+ .add_new_line { width:auto; height:27px; background-color:darkorange; float:right;
+ border:0; font-weight:bold; color:white; padding-left:8px; padding-right:8px; cursor:pointer;
+ border-radius:2px; }
+ .view_buttoned{ width:60px; height:24px; background-color:deepskyblue; border:0; 
+ font-weight:bold; color:white; border-radius:3px;   }
+ .th_sub_route td { background-color:aliceblue; border:1px solid blue; border-right:0px;  padding:4px; font-size:11px;
+ font-weight:bold; }
+ .td_sub_style td{ width:auto; border:1px solid blue; border-right:0px; border-top:0px;
+ padding:4px; text-align:center;  }
+ .remove_button{ background-color:white; border:0; font-size:12px; text-decoration:underline; color:red;
+ cursor:pointer; }
+ 
+ .option_search_students{ width:500px; height:30px; margin:0 auto; margin-top:15px;  border:3px solid silver; 
+ background-color:azure; border-radius:5px;  }
+ .verticle_linesed{ width:3px; height:20px; background-color:silver; margin-left:10px;    }
+
+ .option_table { width:100%;  float:left;  margin-top:2px; margin-left:14px;     }
+ .student_filter_option{ width:100%; height: auto; margin-top:10px;  float:left; border-bottom:2px solid whitesmoke;  
+ }
+ .capctha_code{ width:110px; height:25px; text-align:center;  padding:3px; border:2px solid gray; border-radius:4px;
+ }
+ .verticle_captcha_line{ width:2px; height:50px; background-color:whitesmoke;  margin-left:12px; margin-right:12px;   }
+ #verify_ur_not_robot{ width:350px; height:auto; border:2px solid whitesmoke; border-radius:4px;    margin:0 auto;    }
+ .refresh_button{ width:30px; height:30px;
+                 background-image:url('../images/refresh.png'); background-repeat:no-repeat;  
+                 border:0; cursor:pointer;    }
+ .resend_button{ width:auto; height:auto; background:none; border:0; color:dodgerblue; font-weight:bold;
+ cursor:pointer; font-size:14px; text-decoration:underline;   }
+ .back_to_login_page{ width:auto; height:auto; background:none; border:0; font-size:15px; margin-top:10px;
+ margin-left:20px; color:darkorange; text-decoration:underline; cursor:pointer; font-weight:bold;     }
+ 
+ .ul_dataas{ width:327px; display:none;  height:auto;  position:absolute;  box-shadow:0px 3px 2px -1px  black;
+ background-color:white; z-index:101; border:1px solid silver; margin-top:-2px;  border-top:0;    }
+ .ul_dataas ul { padding:0.2em; }
+ .ul_dataas ul li { padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid silver; cursor:pointer;
+ font-weight:100; }
+ .ul_dataas ul li:hover { background-color:whitesmoke; font-weight:bold;  }
+ #book_view_table tr td { padding:0.5em; }
+#book_view_table tr:nth-child(even) {background:whitesmoke; padding:2em; }
+#book_view_table tr:nth-child(odd) {background: #FFF}
+
+.search_option_table{ width:auto; height:auto; background-color:whitesmoke; border:1px solid silver; padding:0.2em; 
+border-radius:2px; }
+.search_option_div{ width:100%; height:auto; float:left;   }
+.search_option_list{ width:auto; height:35px;  border:0; font-weight:bold;    }
+.select_box{ width:250px; height:30px; padding:4px; border:1px solid black;   }
+.clear_button{ width:auto; height:30px; background-color:white; border:0; float:right; margin-top: 10px;
+margin-right:20px; text-decoration:underline; color:blue; cursor:pointer;     }
+.first_search_top_div{ width:100%; height: auto; float:left; margin-top:15px;   }
+.search_div_second{ width:100%; height:auto; float:left;   }
+.main_work_data table { font-size: 12px;}
+.horizental_line{ width:100%; height:1px; background-color:whitesmoke; float:left; margin-top:20px;    }
+.horizental_line_ed{ width:100%; height:1px; background-color:gray; float:left; margin-top:5px;    }
+
+.left_div{ width:38%; height:auto;float:left;    }
+.vertical_line{ width:1px; height:100%; float:left; background-color:whitesmoke; margin-left:5px;   }
+.right_div{ width:61%; height:100px;  float:right;    }
+.student_details{ width:98%; height:auto; float:left; margin-top:10px; margin-left: 1%;  }
+.student_image_show{ width:80px; height: 95px; border:1px solid whitesmoke; float:right;   }
+.student_details tr td { padding-top:8px; padding-bottom:8px; padding-left:3px;     }
+.details_title{ width:98%; height:auto; float:left; margin-top:10px; padding-left:1%;
+border-bottom:2px solid gray; font-weight:bold; font-size:14px; padding-bottom:8px;     }
+ 
+ .student_details tr:nth-child(even) {background:whitesmoke; padding:2em; }
+.student_details tr:nth-child(odd) {background: #FFF}
+
+.issue_book_details_table{ width:99%; height:auto;   float:left; margin-top:5px;  }
+.issue_book_details_table .heading td{ background-color:beige; height:24px; text-align:center; 
+font-weight:bold; color:black; margin-top: 5px;  }
+.book_select{ width:220px; height:22px;  }
+.calander_date{ width:90px; height:22px; border:1px solid silver; padding:2px;    }
+.chosen-select{ width:270px; font-size:11px;  }
+.add_button_style{ width:auto; height:24px; background-color:green; color:white; border:0; border-radius:2px;
+margin-top:10px;  }
+.issue_button{ width:100px; height:40px; background-color:darkturquoise; font-size:16px; font-weight:bold;
+color:white; border:0; float:right; margin-top:15px; cursor:pointer;  }
+.remmove_button{ background-color:white; color:red; float:right; font-size:11px; border:0; text-decoration:underline;
+cursor:pointer; }
+.show_notification{ width:100%; height:auto; text-align:center; font-size:18px; color:red;
+                   padding-top:30px; float:left;       }
+.parents_select_option{ width:300px; height:30px; background-color:whitesmoke;
+                       border:1px solid silver;    }
+.parent_details{ width:100%; height:auto; float:left; margin-top:10px; margin-bottom:10px;    }
+.table_list{ width:100%; float:left; margin-top:10px;   }
+.table_th_style td { height:35px; border:1px solid gray; border-right:0; 
+                    background-color:whitesmoke; font-weight:bold; text-align:center; 
+padding-left:1%; padding-right: 1%; font-size:11px;  }
+.table_tr_style td{  padding-top:15px; padding-bottom:15px; padding-left:1%; padding-right: 1%; 
+border:1px solid gray; border-right:0; border-top:0; font-size:11px;    }
+.student_middle_table{ width:95%; height:auto; margin:0 auto; margin:10px; margin-top:0; margin-bottom:0;     }
+.student_table_th td{ width:auto; height:25px; background-color:whitesmoke;
+font-size:11px; font-weight:bold; text-align:center; padding:0; border-top:1px solid gray; }
+.student_table_td td { height:27px; padding:0; padding-top:3px; padding-bottom: 3px;   }
+.top_button_div{ width:100%; height:auto; float:left; margin-top:5px;    }
+.header_top_button{ width:auto; height:25px; background-color:dodgerblue; padding-left:15px; padding-right:15px;
+float:right; padding-top:5px; color:white; font-size:14px; border-radius:3px; margin:2px;  margin-right:10px;  font-weight:bold;    }
+.header_top_button:hover{ cursor:pointer; opacity:0.7;  }
+.add_button{ width:auto; height:22px; padding-left:18px; padding-right:18px;
+            background-color:darkviolet; float:right;  padding-top:5px;  color:white; border-radius:3px;
+font-weight:bold; cursor:pointer;  }
+.parent_list_style{ width:100%; height:auto; float:left; margin-top:15px;   }
+.top_title{ width:98%; height:25px; padding-top:8px; background-color:azure; font-size:14px; font-weight:bold;
+padding-left:2%; border:1px solid silver; border-radius:2px; float:left; margin-top:4px;    }
+.photo_upload_table{ width:100%; height:auto; float:left;  margin-top:10px;   }
+.th_style td { background-color:lightcyan; height:27px; text-align:center; font-weight:bold; border:1px solid gray;
+height:35px; border-right:0px;  }
+.view_full_detail_button{ width:auto; height:26px; background-color:deepskyblue; border:0;    
+color:white;  font-weight:bold; border-radius:3px;   }
+.td_style_student td{ border:1px solid gray; border-right:0; text-align:center; border-top:0px; 
+                     padding-top:10px; padding-bottom:10px;    }
+.update_button{ width:auto; height:30px; background-color:darkgreen; color:white; border:0;  cursor: pointer;
+padding-left:15px; padding-right:15px; border-radius:5px;   }
+.update_button_style  { width:auto; height:44px; background-color:dodgerblue; font-weight:bold; color:white; border: 0;
+ padding-left:20px; padding-right:20px; border-radius:4px; float:right; cursor:pointer;     }
+.text_box_css{ width:110px; height:30px; text-align:center;   }
+.select_style_css{ width:210px; height:27px; border:1px solid black; margin:5px; float:right;     }
+.left_frame{ width:15%; height:100%; border:1px solid silver;  margin-top:20px; float:left;  background-color:whitesmoke; padding:10px;     }
+.left_frame ul li { padding-bottom:5px; padding-top:5px;  border-bottom:1px solid silver;    }
+
+.quick_sms_button{ width:99%;color:black;   height:24px; padding-top:5px;  font-weight:bold;
+font-size:13px; text-align:center; cursor:pointer;  border-radius:3px;    }
+.right_div_quik_msg{ width:82%; height:auto; border:1px solid silver; float:right; margin-top:20px;   }
+.title_ui_style{ width:97%; height:23px; padding-left:3%; font-weight:bold;  padding-top:9px;
+                background-color:whitesmoke;   border-bottom:1px solid silver; float:left;   }
+.left_iframe{ width:62%; height:auto;  float:left; }
+.right_iframe{ width:100%; height:auto;  float:left; border-top:1px solid silver;}
+#right_div_frame{ width:38%; height:auto;  float:right; }
+.sms_table{ width:95%; height:auto; float:left; margin:2%;   }
+.sms_message{ width:100%; height:70px;  }
+.button_css{ width:auto; height:auto; padding:8px; background-color:darkblue; color:white; float:left;
+font-weight:bold; border-radius:2px; box-shadow:0px 0px 4px 0px black; cursor:pointer;    }
+.top_search_div { width:100%; height:auto; float:left;  border-bottom:1px solid silver; padding-bottom:10px;  }
+.get_details_button{ width:auto; height:auto; float:right; background-color:orange; border:0; padding:5px;
+font-weight:bold; padding-left:15px; padding-right:15px; float:right; border-radius:2px;
+float:right; font-size:12px; color:white; cursor:pointer;     margin-top:5px;   
+}
+.data_list{ width:100%; height:auto; float:left;   }
+.record_no_found td{ border:1px solid black; height:32px;  color:red; text-align:center; font-weight:bold; font-size:13px;     }
+.tr_heading_css td{ width: auto; height:auto; font-size:11px; color:white; height:23px;   font-weight:bold; 
+                   background-color:#444;  text-align:center;   }
+.td_data_listsed td { border:1px solid black; border-top:0; border-right:0;  
+                     font-size:11px;  height:auto; text-align:center; 
+                     padding-top:10px; padding-bottom:10px;    }
+.message_div_right{ width:350px; height:400px;overflow:auto; border-left:1px solid silver;   float:right;   }
+.message_div_right ul li { border:1px solid green; padding:5px; margin:4px; font-size:11px; color:green; cursor: pointer;
+border-radius:4px; }
+.message_div_right ul li:hover{ background-color:skyblue; color:black;   }
+#other_option_table{ width:250px; font-size: 11px; height:auto;  float:right;border:1px solid gray;   }
+.heading_otion{ width:100%; height:20px; background-color:black; text-align:center; font-weight:bold;
+color: white; font-weight:bold; }
+.student_search_option{ width:100%; height:auto; float:left; margin-top:10px; margin-bottom: 10px;   }
+.health_text{ width:250px; border:1px solid silver; }
+.top_health_heading{ width:auto; height:25px; background-color:#444; color:white; text-align:center; font-weight:bold;
+}
+.td_health_style td{ width:auto; border:1px solid black; border-top:0; border-right:0;    height:auto; padding-top:5px; padding-bottom:5px; text-align:center;     }
+.age_text_box{ width:60px; height:20px; text-align:center;  border:1px solid silver;   }
+.course_table{width:100%; height:auto;   }
+.course_th_style{ width:auto; height: 24px; background-color:#444; color:white; text-align:center;    }
+.course_td_style td{ width:auto; height:auto; padding-top:5px; padding-bottom:5px; border:1px solid #444;
+border-right:0; border-top: 0; text-align:center;  }
+#qualification_table td{ text-align:center;  }
+#achievement_table td { text-align:center; }
+.course_text_box{ width:auto; height:22px; border:1px solid black; padding-left:5px; padding-right:5px;    }
+.experiense_text_area{ width: 500px; height:40px; border: 1px solid black; }
+.achievement_text_area{ width:250px; height:38px; } 
+#document_table td { text-align:center; }
+#language_table td { text-align:center; }
+.reset_button{ background-color:white; color:red; border:0; box-shadow:none; font-size:15px; float:right; font-weight:bold;
+margin-right:20px; margin-top:5px; cursor:pointer;   }
+.title_show_this{ width:100%; margin-bottom:5px;  font-weight:bold; font-size:15px;   
+               padding-bottom:4px;  height:auto; border-bottom:2px solid silver;   }
+.document_button { width:70px; height:auto; background-color:dodgerblue; border:0; margin-top:5px;
+padding:4px; color:white; font-weight:bold; cursor:pointer; float:left;    }
+.forward_page_style{ font-weight:bold; }
+.event_type_Css{ width:190px; height:26px; padding:3px;  border:1px solid silver;   }
+#attendance_full_width_div{ width:100%; height:auto; float:left; margin-top:30px;    }
+.description_text_box{ width:285px; height:70px;  }
+.center_div_tag{ width:80%; height:auto; float:left; margin-left:10%;   background-color:wheat; border:1px solid orange;
+                padding:2%;  margin-top:3%;  border-radius:10px;   float:left;    }
+.small_table_in_center{ width:100%; height:auto;  }
+.small_table_in_center tr th { background-color:whitesmoke; border:1px solid gray; font-size:10px; padding-top:4px;
+                              padding-bottom:4px;      }
+.module_li{ width:100%; max-height: 200px; overflow-y:auto; border-bottom:1px solid silver;   }
+.module_li li { padding-top:7px; padding-bottom:7px; text-align:left; padding-left:10%; background-color:whitesmoke; border:1px solid silver;
+border-bottom:0;  font-weight:bold;  }
+.emp_style_table{ width:100%; height:auto;  }
+.emp_style_table .th_style_emp td { background-color:#f0f0f0; text-align:center; font-weight:bold; padding-top:5px;
+                  padding-bottom:5px;   border:1px solid black; border-right:0;    }
+.emp_style_td td{ width:auto; height:auto; padding-top:5px; padding-bottom:5px; border:1px solid black;  border-top: 0;
+border-right:0; }
+#children_table{  width:100%; float:left; display:none;  margin-top:15px;  }
+#spouse_table {  width:34%; float:right;  display:none; }
+.view_document_button{ background-color:white; border:0; color:blue; font-size:12px; font-weight:bold;
+                      margin-left:15px; text-decoration:underline;      }
+.attendance_style{ width:auto; height:auto; padding:5px; border-radius:4px; font-weight:bold; color:white; 
+                  font-size:14px;       }
+#track_student_table{ width:auto; border:1px solid silver;   }
+#track_student_table tr:nth-child(even) {background: #FFF;} 
+ #track_student_table tr:nth-child(odd) {background:whitesmoke;} 
+ .pop_table td {text-align: center; padding-top:4px; padding-bottom:4px;   }
+ .pop_table tr:nth-child(even) {background: #FFF;} 
+ .pop_table tr:nth-child(odd) {background:whitesmoke;} 
+ 
+ 
+  
+ #first_pop_up_div{ width:100%; height:100%; background-color:black; position:fixed; z-index:999; opacity:0.1;
+ filter: alpha(opacity=10); -moz-opacity: 0.1; -khtml-opacity: 0.1;
+ 
+ }
+ 
+ 
+ 
+ .second_show_pop_up{ width:100%; height:100%; position:fixed; z-index:1000;  
+ }
+ #student_list_show{ width:700px; height:auto; padding:2em; background-color:white;
+                  border-radius:5px; box-shadow:0px 1px 20px 0px black; 
+ position:absolute;
+    top:40px;
+   
+    left: 0;
+    right: 0;
+    margin: auto;       
+ }
+  .middle_center_work_dived { width:100%; height:auto; float:left; padding-top:0em; padding-bottom:1em;   }
+ .pop_up_title{ width:100%; height:auto; border-bottom:2px solid black; float:left; text-align:left; font-size:14px; padding-bottom:4px;
+ font-weight:bold; }
+ .pop_table{ width:100%; height:auto; float:left;  border:1px solid silver; margin-top:5px;  }
+ .pop_tr_heading td{ background-color:whitesmoke; font-weight:bold; padding:2px; 
+                    border-bottom:1px solid silver;  }
+ .absent_student{ width:auto; height:auto; background-color:red; padding:3px; margin:3px; 
+                 color:white; border-radius:2px;     }
+ .sms_div{ width:100%; height:auto; border-bottom:1px solid blue; float:left;    }
+ .calander_table{ width:30%; padding:5px; border:2px solid darkslateblue; border-radius:5px;  margin:3px; font-size:14px;    }
+ .text-center{border-bottom:2px solid darkslateblue; padding-bottom:5px;  }
+ .squire_td{ border:1px solid whitesmoke; height:50px;     }
+ .date_print_name{ width:100%; height:17px;  background-color:whitesmoke; font-weight:bold;
+                   font-size:13px;float:left; 
+                 color:black; border-right:4px;  text-align: center;   }
+ .attendance_status{ width:50%; height:auto; padding-top:2px; padding-bottom:2px;   background-color:green; text-align:center; font-weight:bold; color:white;
+  border-radius:6px;float:left;   margin:auto; margin-left:25%;  margin-top:8%;  }
+ .select_border_none{ border:0; box-shadow:none; font-weight:bold;   }
+ .text_box_border_style{ width:70px; height:22px; border:1px solid gray; padding-left:4px; text-align:center;     }
+ .default_week_days{ width:20%; height:auto; margin:auto;   }
+ .week_days{ width:25px; height:25px;  }
+ #week_days_table{ width:auto; height:auto; float:left; margin-top:30px; font-weight:bold; font-size:19px;      }
+ #week_days_table tr td { padding:5px;  }
+ .show_studnet_list{ width:100%; height:auto; margin:auto;  float:left;
+ }
+ .show_student_table{ width:70%; height:auto; margin:auto; padding:1em; font-size:11px;
+                     background-color:aliceblue; border:1px solid aquamarine;    }
+ .student_image_this{ width:110px; height:130px; float: right; border:1px solid blue;   }
+ .text_box_time_table{ width:200px; padding-left:10px; padding-right:10px; 
+                      height:30px; border:1px solid silver; font-size:12px;    }
+ .time_table_title{ width:94%; height:auto; padding-top:5px; padding-bottom:5px; border-bottom:2px solid gray; margin:3%; 
+ font-weight:bold; margin-bottom:0; margin-top: 1%;  }
+ .week_days_time_table{ width:20px; height:20px;  }
+ .submit_button { width:auto; height:35px; margin-top:10px;  float:right; margin-right:20px; background-color:darkslateblue;
+ color:white; font-weight:bold; border:0; padding-left:20px; padding-right:20px; cursor:pointer;      }
+ .lecture_table{ width:94%; height:auto; margin:0%;   float:left; margin-left:20px; border:1px solid darkseagreen;
+ margin-top:5px; }
+ .time_th th{ background-color:darkseagreen; height:20px;    }
+ .lecture_table td { text-align:center; }
+ .time_table_heading td{ height:50px; border:1px solid green; padding-top:10px;   background-color:darkseagreen;
+ font-weight:bold; color: white; }
+ .break_color{ background-color:#FFCCBA; }
+ .time_table_data_td td { border:1px solid gray; height:80px;  }
+ .assign_button{color:blue; text-decoration:underline; font-weight:bold;
+ cursor:pointer; }
+ .assign_table{ width:auto; height:auto; margin:auto; margin-top:20px;    }
+ .text_box{ width:90px; height:28px; border:1px solid black;  padding-left:10px; padding-right:10px;
+           text-align:center;    }
+ .text_area{ width:250px; height:40px; border:1px solid black;   }
+ .top_one_value{ width:75%; height:22px; padding-top:7px;  background-color:whitesmoke; 
+               border-radius:3px; font-weight:bold; text-align:center;    border:1px solid silver; float:right;      }
+ #day_value{ float:left;  margin-left:15%; }
+ #lecture_value{ float:left; margin-left:10%;  }
+ .verticle{ float:left; margin-left:10%;  }
+ .text_box_code{ width:210px; height:25px; border: 1px solid black; padding-left:4px; padding-right:4px;    }
+ .lecture_table tr td{ border-bottom:1px solid silver; padding-top:4px; padding-bottom:4px;    }
+ .text_box_timeing{ width:70px; height:25px; border:1px solid #444; text-align:center;    }
+ .text_img{ width:20px; height:20px; background-color:whitesmoke;    }
+ .class_section_details{ width:60%; height:40px; background-color:aliceblue; border:1px solid aquamarine;
+  margin:auto; margin-top:20px;   }
+ #time_table_one{ width:auto; height:auto; margin:auto; margin-top:7px; font-size:14px;     }
+ .active_button{ width:80px; height:22px; padding-top:8px; background-color:green; text-align:center; color: white;
+ font-weight:bold;  margin:auto; }
+ .view_time_table{ width:auto; height:auto; background-color:dodgerblue; border:0;  font-weight:bold; padding:10px;
+ color:white; cursor:pointer;  }
+ .horizental_lines { width: 100%; height:1px; background-color:gray;    }
+ .sms_template_div{ width:95%; height:auto; padding:1em; background-color:aliceblue; 
+                   margin:auto; border:1px solid aquamarine;    margin-top:10px;     }
+ .message_instruction{ width:100%; height:auto; background-color:wheat; padding:2px;    }
+ .title_heading_template{  width:auto; padding-left:30px; padding-right:30px; color:white;
+                         font-size:16px; font-weight:bold;     height:26px; padding-top:7px;
+                         background-color: black; margin-top:10px;    }
+ .system_genrated_div{ width:100%; height:auto;float:left; color:black; font-size:19px;
+                       font-weight:bold; border-radius:4px; height:70px;  cursor:pointer;  
+                      background-color:lightblue; border-bottom:5px solid #888;     }
+ .system_genrated_div table { width:100%; height:auto; float:left;   }
+ .clear_buttoned{ width:auto; padding-left:13px; padding-right:13px; background-color:darkgreen; color:white;
+ float:left; border:0; height:22px; cursor:pointer;    }
+ .subject_heading{ width:95%; height:auto; border:1px solid gray; border-radius:4px;  
+                  background-color:silver; padding:4px; font-size:15px;     }
+ .user_selection_css{ width:16px; height:16px; cursor:pointer;   }
+ .sms_other_mobile_no{ width:67%; padding-left:1%;  height:22px; border:1px solid silver;   }
+ .text_box_search{ width:200px; height:22px; border:1px solid silver;padding-left:10px; padding-right:10px;     }
+ .select_styling_group{ width:200px; height:26px; border:1px solid silver;   }
+ #time_table_report{ width:100%; height:auto; float:left; margin-top:10px;   }
+ .tr_style_css{ background-color:black; height:29px; text-align:center;   color:white; 
+               font-size:12px;font-weight:bold;     }
+ .add_admin_button{ width:auto; height:27px; padding-top:10px; background-color:dodgerblue; float:right;
+ padding-left:25px; padding-right:25px; margin-top:15px; font-weight:bold; 
+ color: white; border-radius:4px;cursor: pointer;    }
+ .left_admin_div{ width:60%; height:auto; float:left;   }
+ .right_admin_div{ width:37%; height:auto; float:right;    }
+ .module_liststed{ width:96%; height:22px; background-color:black; color:white; font-weight:bold;   
+ padding-left:4%; padding-top:7px; margin-top:20px; border-radius:3px;    }
+ .module_icon_set{ width:46%; float:left; border:1px solid silver; margin:1%; margin-top:0;   margin-left:2%;   }
+ .module_check_box{ width:14px; height:14px;   }
+ .add_attech_file{ width:auto; height:auto; background-color:white; border:0; color:darkorange; font-weight:bold;
+ box-shadow:none; float: right; text-decoration:underline; cursor:pointer;   }
+ .attech_file_table { border:1px solid gray; margin:0 auto;  }
+ .attech_file_table tr td{ border:0; padding:5px;  }
+ .remove_button_style { background-color:white; color:red; text-decoration:underline; box-shadow:none;      }
+ .reallot_button{ width: auto; height:28px; background-color:darkorange; border-radius:4px; color:white;
+ font-weight:bold; }
+ .get_student_data{ width:100%; height:auto; float:left; margin-top:10px;     }
+ .table_action_div{ width:100%; height:auto; padding-top:2px; border-top:1px solid whitesmoke; margin-top:2px;     }
+ .edit_button{ width:auto; height: auto; color:blue; float:left; margin-left:5px; margin-right: 5px;
+             font-weight:bold; text-decoration:underline; font-size:11px; cursor:pointer;     margin-bottom:2px;     }
+ #table_time_table_manage tr td{ font-size:11px; }
+ 

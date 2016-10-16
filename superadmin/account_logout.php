@@ -1,0 +1,20 @@
+<?php 
+ob_start();
+session_start(); 
+if(isset($_SESSION['super_admin_session_on']))
+{
+ unset($_SESSION['super_admin_session_on']);
+ if(!isset($_SESSION['super_admin_session_on']))
+{
+ header("Location:../loginPage.php");  
+}else
+{
+    session_destroy();
+ 
+   header("Location:../loginPage.php");   
+}   
+}else
+{
+    header("Location:../loginPage.php");   
+}
+?>
